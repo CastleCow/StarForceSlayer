@@ -67,16 +67,16 @@ public class PlayerController : MonoBehaviour
 		Vector3 moveVec = fowardVec * moveInput.z + rightVec * moveInput.x;
 		//controller.Move(moveVec * moveSpeed* Time.deltaTime);
 		anim.SetFloat("MoveSpeed", moveSpeed);
-        if(Input.GetButtonDown("Left"))
-              rigid.MovePosition(transform.position - Vector3.right * Input.GetAxis("Horizontal")*moveSpeed);
-        if(Input.GetButtonDown("Right"))
-              rigid.MovePosition(transform.position + Vector3.right * Input.GetAxis("Horizontal")*moveSpeed);
+        if(Input.GetButtonDown("Left")&&transform.position!=new Vector3(-1.2f, transform.position.y, transform.position.z))
+              rigid.MovePosition(transform.position - Vector3.right *moveSpeed);
+        if(Input.GetButtonDown("Right") && transform.position != new Vector3(1.2f, transform.position.y, transform.position.z))
+              rigid.MovePosition(transform.position + Vector3.right * moveSpeed);
 
     }
 
     private void Rotate()
 	{
-		transform.forward = new Vector3(Camera.main.transform.forward.x, 0f, Camera.main.transform.forward.z).normalized;
+		//transform.forward = new Vector3(Camera.main.transform.forward.x, 0f, Camera.main.transform.forward.z).normalized;
 	}
 
 	private void Jump()
