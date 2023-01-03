@@ -1,0 +1,3843 @@
+fileFormatVersion: 2
+guid: 3bda4906a0e8050408020dc3cdb1f191
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 00Cannon
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1291
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d895e879c3679214686e4c6db6579a52
+      internalID: 1763002688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 01Cannon+
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1292
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad1bbe39a9efeb43941dae34859578e
+      internalID: 145895016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 02Cannon++
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1292
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78163c9f0026044691fc4663ca5cdfd
+      internalID: -343806995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 03Spreader
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1273
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6e1b466d06fb34e866119d8204cafb
+      internalID: 976067171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_4
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1273
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58bce3237ff0ab46ae84a7265c3d94f
+      internalID: -1438365699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 05MiniBomb
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1273
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d539b2c4a990cf4eb3a8c6228ae7281
+      internalID: -2088627557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1273
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb39521d930879468ca1022d42db3d6
+      internalID: -1565585029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 07Sword
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1291
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f797f950c18a14894f4d76e94211e9
+      internalID: 1662939203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 08WideSword
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1290
+        width: 64
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2490becffeb3b9d44962a84c0a6cc34c
+      internalID: -416171583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_9
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1273
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9496f26d90a01654fa06e286b57347ea
+      internalID: -244697444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_10
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1273
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbdb2b065786e542959428565b07ca8
+      internalID: 1849233442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10FireSword
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1273
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f270c4df5721d4fb20ed1b406e74b0
+      internalID: 1289294477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12ElecSword
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1195
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeee65d7ee22abd4d839bc47b3028535
+      internalID: 396839594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0017db47cad874996954527883f2fa
+      internalID: -1430608239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe5aed54b14bdb42b7507c0cd0f9d15
+      internalID: -914151471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_15
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e8518ce89d632439d84fec2157c33b
+      internalID: -930982501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_16
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08e84169e8175943a8a8f037b4d0490
+      internalID: 1024447623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_17
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9103137f6769cb44fb73dea22cb61eb9
+      internalID: 1906086858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_18
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65a75b51a25bb248b359e84d3e49128
+      internalID: -1608722962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_19
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82ffb39dc5311b4cbeb69afc0788497
+      internalID: -2145311937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_20
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6016f219eb3bbf6419715f1a249c5d79
+      internalID: -15615249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_21
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55140d91d1fd4db4f859f3720a4f2e81
+      internalID: -2069144169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_22
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1177
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b944ce6b3039b4c94f451c33512b7f
+      internalID: -667854919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_23
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1176
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332e6e4b019061c46b2b5e7bee9272f9
+      internalID: -353900313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ff61dadde580948a73a619fcef2a29
+      internalID: -549909751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674c975e343393a41bfd06224bfc8d9e
+      internalID: 1069775420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_26
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93af951ce97a9bc47b551f1e5a6586f3
+      internalID: 258303821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_27
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3408a72d50cc2542b2b71b13c4f0070
+      internalID: -1934282931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_28
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11aea85663b49d849bdeb5d618a7e0b1
+      internalID: 1721730271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_29
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bad4135a171184da11decffaa9bdd3
+      internalID: -816052112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_30
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14248b64e3d82ed49a68f2309cef0d30
+      internalID: -107657553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_31
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbb3bc800311604ca0e77d5b12d8951
+      internalID: 1430564937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_32
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15597d690182f3448a9a3a549d2e067
+      internalID: -303070032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_33
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065cf649f754b554f8d540c4cb38a330
+      internalID: -1864185392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_34
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd2c07104c04224fb23742efefe2597
+      internalID: 710181619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_35
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1081
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b02ad126174547a684879fc5f4149
+      internalID: -324852788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b17eba601d1b8418c5eb72b4299fcf
+      internalID: -1064919408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b411920c35be3db4e983037eac8266de
+      internalID: 1656680576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_38
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c471b218e30c1a7489034f229c65908e
+      internalID: -158416205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_39
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ae43c38b1189f4c851cb7e2722f3fe
+      internalID: -1608710129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_40
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0654a88b97fd90c4dbe60bc0aba2359e
+      internalID: 1915021090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_41
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8595857772afe9149a2fcdd01fc5bf43
+      internalID: 133112643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_42
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7415966667d7217448778c34c320c340
+      internalID: -1289525099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_43
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f68dd08ca636f4c9091fa58ffd3936
+      internalID: 284415398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_44
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c23986a6a9c0134e869b88944dbe941
+      internalID: 259753244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_45
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a271fd8e520c842b8a7c2f821a2284
+      internalID: -1089643453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_46
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c7407ed2d0e5545a456178942e42f5
+      internalID: 1303545271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_47
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 985
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3520cdbb2c83e44a4d11945be68f18
+      internalID: -1757717839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06824bbc0b8d85d4a9c2e359af08e7c1
+      internalID: 361333496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6dbf0b841d39749bc3b1dee229770b
+      internalID: 1063769687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_50
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9921c45098f8941b1e5815ac1a8832
+      internalID: -162633281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_51
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411e55851cbfb6144a8058405d3b67f9
+      internalID: 1307733684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_52
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcb3e3b07ca3c14aa1e1d490fccd786
+      internalID: -1083201969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_53
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4606a1debaedf7e4ab164e5a17fb98c7
+      internalID: 1045603076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20Recover10
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 910
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0b1b3362cc19b43891e7e54c862e88
+      internalID: -1487863058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_55
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b949b73786db63e449f9a31c96f3f448
+      internalID: -1992927814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_56
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76759ea748c341409e64d5b9a9e603b
+      internalID: -480569545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_57
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2e8c2d699b5274cb643627e2ed82fd
+      internalID: 480056646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_58
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a486b518f607441a1cb28f417308ad
+      internalID: 263729500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_59
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 889
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc71cdd3b59f9e49b11707a79899e11
+      internalID: -1249305728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7c9224bbcfe2a4fa97fe3e4053b77c
+      internalID: 335094699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255805f5a84aa1a4ca982abbef5605b9
+      internalID: 185171938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 30StealPanel
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 812
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8cf1ad8c5e56d642a65910bc24e628e
+      internalID: -753981866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_63
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8ac3090c57dbc448c145ec17c88ab9
+      internalID: -1181985304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_64
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec238c1d494ea84cb5d7040530b3291
+      internalID: -1529229070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_65
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75770926cab6ac64080a904729ab42a8
+      internalID: -487765299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_66
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd79c4cd464956438c6c6c557228e53
+      internalID: -1926934776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_67
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e763baeee9685eb4a9490a277eba4c38
+      internalID: -1009275395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_68
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099d16871d4182c43a612a2749fa335b
+      internalID: -1091433406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_69
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864197e98ae3f0649979d1dad83cd458
+      internalID: 1397590184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_70
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16e8c0516291b84db5c9d4bedfdabad
+      internalID: -1115911078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_71
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 793
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86b7fab09d068d4eb84c05a10b92fa2
+      internalID: -1699516172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_72
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053df6f7e4e869f4d95d51e838cb2618
+      internalID: 886095004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3655c32556d73042962887221e2c22a
+      internalID: 1145287993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_74
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ef96f060d1e7244ac1f2c7775059b6
+      internalID: 2105156674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_75
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364af1e7f3bb6d54b813e622b30fe33c
+      internalID: 281671948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_76
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defce9d438395474d855b2dfaa579856
+      internalID: -1688905239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_77
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547f3451f0593c849b4bb476f060b7ac
+      internalID: 1191024972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_78
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56da8f4bc673c54f86071b212337a9c
+      internalID: -1034541462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_79
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932f3ddee0968a94a8276dfc8504e777
+      internalID: -886920455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_80
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9503a08fc1a8da342a5eca6c85d81842
+      internalID: -2029241373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_81
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff717ea1bd3b9d940befc06660d5fed8
+      internalID: 496306398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_82
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7314245765dd2f4e84a7332710024c5
+      internalID: 1764846394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_83
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 697
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a619849b3a6980b47a360279e347537f
+      internalID: 1463971804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_84
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acb5395c72442f44b1913fb75cb42ba
+      internalID: -1457454568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4645c2ba78f5e41aeebc0893a5be20
+      internalID: -894872173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_86
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7212004aa37ee40b3946d28b533916
+      internalID: 1007043083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_87
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f38ae3ac5728a498d759453c1485f4
+      internalID: 476425042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_88
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed828d895635b4c4596342c547eef13b
+      internalID: 1827465950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_89
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004f08e8540547f4dbd45f3de401ba81
+      internalID: -90542654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_90
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7029b4d2ccce844beb12196b30a8ff
+      internalID: -1076230205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_91
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9734c86315c9e76458af913391885baa
+      internalID: -793024780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_92
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e132ce5e915c4a14bbe8ab066bb1735a
+      internalID: 1896193470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_93
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f97735f7391ec48a32ce10890269e1
+      internalID: 1619492241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_94
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef311da849a7274688c4e77069056c5
+      internalID: -1275618503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_95
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 601
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af6b2d3deadfda45b3431b033d3463e
+      internalID: 1890664227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_96
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a81ac4148060942b93c865bcc65934
+      internalID: -452171423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f24ffe81f9657c48b4b2fde9fec697c
+      internalID: 805542370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_98
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c803a8db3252f874083d60115c1998bc
+      internalID: -285698862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_99
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138a99d16cf68b74d9e1812bff4e40fb
+      internalID: -383817851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_100
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860f05feda43d294b8be7e2d5f33e950
+      internalID: -1372776105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_101
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d767b20aec1e5d643b7ea17c8df241e5
+      internalID: 1670116576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_102
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d8822bb2b934d43b7153d661e36141
+      internalID: -298296109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_103
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f164f8d13907924dbd0e12d5a62da95
+      internalID: -1730421752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_104
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef14ab9591af6ad4d97ac8c929ce278b
+      internalID: 1664105860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_105
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0a2371f726c804e8dd4bb6e49fee74
+      internalID: -51034726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_106
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f2aac27891beb47a819fd1325bdd7c
+      internalID: -1428577206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_107
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 505
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1750c7206f87a74a958f67db6cfe40b
+      internalID: 1566891134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_108
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739bbb460406bdd468f3d6d1b3c5c393
+      internalID: 90414158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_109
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c2c701608ba2e44a49e76ae4b2af05
+      internalID: 1360391666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_110
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28060128c6175c54d925c1c89b98b772
+      internalID: -1044229442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_111
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1993729489c02864796062067eb1f293
+      internalID: 1668828537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_112
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a71f08b5a67eb4e8c89c5ab719e694
+      internalID: 1356217280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_113
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b00679d6b0ecd94f8349029b280e407
+      internalID: 1118892172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_114
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4173d2de413f854419693f33fb4404cc
+      internalID: 459503474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_115
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fd93acf53bc4f4da26535a3eacc06c
+      internalID: -650482579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_116
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2070b39113d0144a87766034ec4ae8
+      internalID: 942555961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_117
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b456a5edd072e543924078d28b22c7e
+      internalID: -758885089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_118
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3451f61e681fe044d82b880f42b91a9a
+      internalID: -496149692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_119
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 409
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fc0191ed985ea4c8e4006137e61eef
+      internalID: -373660177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_120
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95174795ffd8f74c9f3cda24489177a
+      internalID: -1636289950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f081e765970ec4747a132f37377a8818
+      internalID: -656700510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_122
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b945cea0bc11c94cb3dd322d583d0fa
+      internalID: 690995796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_123
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ad57ec12f4a7a4297ea87b4ffd44b7
+      internalID: -1606210779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_124
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4432af18597c66542ab95b109f9b0177
+      internalID: -1086161030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_125
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a040356dd94d1a44856ae5952d6cabd
+      internalID: -1576330343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_126
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4509f3cc853334da5306c9327fd5a3
+      internalID: 731404614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_127
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8850234450a2faa468ff761b4c84405d
+      internalID: 2034962055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_128
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7d2d7ab05704944844dc744cbc8c43
+      internalID: 1689242115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_129
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5bd98df1e6660428d0162062432f1c
+      internalID: -1322541273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_130
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690be3512a4d30745a78e2059d747830
+      internalID: -1963250740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_131
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 313
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f9a7cce8b1ac04eaf5f9f58c89b48d
+      internalID: -1669958830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_132
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497a51ac7f1b61547a5d39126f753ef2
+      internalID: 849088966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_133
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cadfd4d9badbe649addac1c4962b516
+      internalID: 1362076541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_134
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8877c090bfc50e94da1c5f1db9791c89
+      internalID: -1979459959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_135
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7844ded44f8ebc4385a8c7f203009ec
+      internalID: 1883791975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_136
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0758c90cf8afa28488c18299a633aeec
+      internalID: 406663957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_137
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154c0b5db44afc844a0d9ce10cb56e28
+      internalID: -904412430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_138
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d8ba4558350ec45b165e6590ba101d
+      internalID: -728518865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_139
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e94467974a558438861005dbc91beb
+      internalID: 1592799059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_140
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4e02d2b1bf6ad4f82d97f011b5d2d4
+      internalID: 772604710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_141
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a95f10e276780d4b9978aa384708e39
+      internalID: -1964261821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_142
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed712b4b06dbe2344935a2a8b8ec9551
+      internalID: 671259321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_143
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 217
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b393573bbec03488b71c6ec0c3ec67
+      internalID: -1436540593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_144
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a64d276885c17469cf48ceeffc29b4
+      internalID: 668043047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074b7dbb2ce3e2c40855dafc9dc4b222
+      internalID: 92834843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_146
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fe30e6d3d9c5b43b927dda17b3e150
+      internalID: -1947815489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_147
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854d68d94570c41428b12d7d287a45a5
+      internalID: -285890268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_148
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31623aece5be3454281570364587bfc8
+      internalID: -371596801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_149
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61c8b9fb081ef744b7b43ab78ff8532
+      internalID: 1314254859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_150
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5986a860e827642bb386c7b2cd1444
+      internalID: 1160382544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_151
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017bcd6c8df6bca468a7602d687102f5
+      internalID: -1921545072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_152
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382612366d0bd14fa8a07cb0c6b74f6
+      internalID: -574340626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_153
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e80a66fdd7628342be12173c7e531ce
+      internalID: 1029806675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_154
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45793fd4b9fabfb43aaaba9ab2a89745
+      internalID: 2029238427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_155
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 121
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0503637a68cd9ef4483c82fe072a123e
+      internalID: -1058986718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_156
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ae2261237ed5840872aac5df717556
+      internalID: -309957931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_157
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2c3d1bb711410439fa1bfab77af482
+      internalID: 1391815675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_158
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8ea75aa85bc7b45aeaaaa73e0ff9e7
+      internalID: -1990322120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_159
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ba6a9da5962d548acab6a80e60ac99
+      internalID: 1180382549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_160
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fcefd4be9217f408882da4018b848c
+      internalID: 1315320797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_161
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5cae84025bb024f9dfb38d7995cbe0
+      internalID: 444690937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_162
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5251b010a5ebc49b9b08bda6a34b0e
+      internalID: -1372144513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_163
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd6438594171e44db8bade198ead164
+      internalID: 1468546741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_164
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a7a9d40945a41449630f2b03f08e7c
+      internalID: -1108010879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_165
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd7c3436377a5c4a9c0a349b8ffaa8a
+      internalID: 9464149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_166
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721a19263acdb5e44bf8f9f389a0175f
+      internalID: -1416974524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game Boy Advance - Mega Man Battle Network - Cards_167
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 25
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6592b5d78de28c4fbf284bc44c547e6
+      internalID: 1815361476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 39eb4fa7979f6494b8b5d2179ac9ce30
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game Boy Advance - Mega Man Battle Network - Cards_160: 1315320797
+      Game Boy Advance - Mega Man Battle Network - Cards_15: -930982501
+      Game Boy Advance - Mega Man Battle Network - Cards_34: 710181619
+      Game Boy Advance - Mega Man Battle Network - Cards_106: -1428577206
+      Game Boy Advance - Mega Man Battle Network - Cards_10: 1849233442
+      Game Boy Advance - Mega Man Battle Network - Cards_149: 1314254859
+      20Recover10: -1487863058
+      Game Boy Advance - Mega Man Battle Network - Cards_91: -793024780
+      Game Boy Advance - Mega Man Battle Network - Cards_107: 1566891134
+      Game Boy Advance - Mega Man Battle Network - Cards_79: -886920455
+      30StealPanel: -753981866
+      Game Boy Advance - Mega Man Battle Network - Cards_81: 496306398
+      Game Boy Advance - Mega Man Battle Network - Cards_71: -1699516172
+      Game Boy Advance - Mega Man Battle Network - Cards_143: -1436540593
+      Game Boy Advance - Mega Man Battle Network - Cards_133: 1362076541
+      Game Boy Advance - Mega Man Battle Network - Cards_166: -1416974524
+      Game Boy Advance - Mega Man Battle Network - Cards_135: 1883791975
+      05MiniBomb: -2088627557
+      Game Boy Advance - Mega Man Battle Network - Cards_16: 1024447623
+      Game Boy Advance - Mega Man Battle Network - Cards_50: -162633281
+      Game Boy Advance - Mega Man Battle Network - Cards_69: 1397590184
+      Game Boy Advance - Mega Man Battle Network - Cards_36: -1064919408
+      Game Boy Advance - Mega Man Battle Network - Cards_96: -452171423
+      Game Boy Advance - Mega Man Battle Network - Cards_74: 2105156674
+      Game Boy Advance - Mega Man Battle Network - Cards_158: -1990322120
+      Game Boy Advance - Mega Man Battle Network - Cards_87: 476425042
+      Game Boy Advance - Mega Man Battle Network - Cards_110: -1044229442
+      Game Boy Advance - Mega Man Battle Network - Cards_123: -1606210779
+      Game Boy Advance - Mega Man Battle Network - Cards_28: 1721730271
+      Game Boy Advance - Mega Man Battle Network - Cards_46: 1303545271
+      Game Boy Advance - Mega Man Battle Network - Cards_98: -285698862
+      Game Boy Advance - Mega Man Battle Network - Cards_42: -1289525099
+      Game Boy Advance - Mega Man Battle Network - Cards_122: 690995796
+      Game Boy Advance - Mega Man Battle Network - Cards_119: -373660177
+      Game Boy Advance - Mega Man Battle Network - Cards_112: 1356217280
+      Game Boy Advance - Mega Man Battle Network - Cards_104: 1664105860
+      Game Boy Advance - Mega Man Battle Network - Cards_144: 668043047
+      Game Boy Advance - Mega Man Battle Network - Cards_82: 1764846394
+      Game Boy Advance - Mega Man Battle Network - Cards_38: -158416205
+      Game Boy Advance - Mega Man Battle Network - Cards_32: -303070032
+      Game Boy Advance - Mega Man Battle Network - Cards_86: 1007043083
+      Game Boy Advance - Mega Man Battle Network - Cards_165: 9464149
+      Game Boy Advance - Mega Man Battle Network - Cards_164: -1108010879
+      Game Boy Advance - Mega Man Battle Network - Cards_111: 1668828537
+      Game Boy Advance - Mega Man Battle Network - Cards_37: 1656680576
+      02Cannon++: -343806995
+      00Cannon: 1763002688
+      08WideSword: -416171583
+      Game Boy Advance - Mega Man Battle Network - Cards_61: 185171938
+      Game Boy Advance - Mega Man Battle Network - Cards_64: -1529229070
+      Game Boy Advance - Mega Man Battle Network - Cards_57: 480056646
+      Game Boy Advance - Mega Man Battle Network - Cards_88: 1827465950
+      Game Boy Advance - Mega Man Battle Network - Cards_31: 1430564937
+      Game Boy Advance - Mega Man Battle Network - Cards_148: -371596801
+      Game Boy Advance - Mega Man Battle Network - Cards_20: -15615249
+      Game Boy Advance - Mega Man Battle Network - Cards_4: -1438365699
+      Game Boy Advance - Mega Man Battle Network - Cards_27: -1934282931
+      Game Boy Advance - Mega Man Battle Network - Cards_142: 671259321
+      Game Boy Advance - Mega Man Battle Network - Cards_150: 1160382544
+      Game Boy Advance - Mega Man Battle Network - Cards_127: 2034962055
+      Game Boy Advance - Mega Man Battle Network - Cards_157: 1391815675
+      Game Boy Advance - Mega Man Battle Network - Cards_161: 444690937
+      Game Boy Advance - Mega Man Battle Network - Cards_33: -1864185392
+      Game Boy Advance - Mega Man Battle Network - Cards_39: -1608710129
+      Game Boy Advance - Mega Man Battle Network - Cards_76: -1688905239
+      Game Boy Advance - Mega Man Battle Network - Cards_116: 942555961
+      Game Boy Advance - Mega Man Battle Network - Cards_83: 1463971804
+      Game Boy Advance - Mega Man Battle Network - Cards_59: -1249305728
+      Game Boy Advance - Mega Man Battle Network - Cards_120: -1636289950
+      Game Boy Advance - Mega Man Battle Network - Cards_103: -1730421752
+      Game Boy Advance - Mega Man Battle Network - Cards_48: 361333496
+      03Spreader: 976067171
+      Game Boy Advance - Mega Man Battle Network - Cards_75: 281671948
+      Game Boy Advance - Mega Man Battle Network - Cards_13: -1430608239
+      Game Boy Advance - Mega Man Battle Network - Cards_109: 1360391666
+      Game Boy Advance - Mega Man Battle Network - Cards_9: -244697444
+      Game Boy Advance - Mega Man Battle Network - Cards_40: 1915021090
+      Game Boy Advance - Mega Man Battle Network - Cards_22: -667854919
+      Game Boy Advance - Mega Man Battle Network - Cards_52: -1083201969
+      Game Boy Advance - Mega Man Battle Network - Cards_93: 1619492241
+      Game Boy Advance - Mega Man Battle Network - Cards_65: -487765299
+      Game Boy Advance - Mega Man Battle Network - Cards_21: -2069144169
+      Game Boy Advance - Mega Man Battle Network - Cards_72: 886095004
+      Game Boy Advance - Mega Man Battle Network - Cards_126: 731404614
+      Game Boy Advance - Mega Man Battle Network - Cards_115: -650482579
+      Game Boy Advance - Mega Man Battle Network - Cards_151: -1921545072
+      Game Boy Advance - Mega Man Battle Network - Cards_101: 1670116576
+      Game Boy Advance - Mega Man Battle Network - Cards_78: -1034541462
+      Game Boy Advance - Mega Man Battle Network - Cards_100: -1372776105
+      Game Boy Advance - Mega Man Battle Network - Cards_163: 1468546741
+      Game Boy Advance - Mega Man Battle Network - Cards_24: -549909751
+      Game Boy Advance - Mega Man Battle Network - Cards_51: 1307733684
+      Game Boy Advance - Mega Man Battle Network - Cards_67: -1009275395
+      Game Boy Advance - Mega Man Battle Network - Cards_108: 90414158
+      Game Boy Advance - Mega Man Battle Network - Cards_141: -1964261821
+      Game Boy Advance - Mega Man Battle Network - Cards_70: -1115911078
+      Game Boy Advance - Mega Man Battle Network - Cards_18: -1608722962
+      Game Boy Advance - Mega Man Battle Network - Cards_92: 1896193470
+      Game Boy Advance - Mega Man Battle Network - Cards_121: -656700510
+      01Cannon+: 145895016
+      Game Boy Advance - Mega Man Battle Network - Cards_124: -1086161030
+      Game Boy Advance - Mega Man Battle Network - Cards_140: 772604710
+      Game Boy Advance - Mega Man Battle Network - Cards_147: -285890268
+      Game Boy Advance - Mega Man Battle Network - Cards_63: -1181985304
+      Game Boy Advance - Mega Man Battle Network - Cards_137: -904412430
+      Game Boy Advance - Mega Man Battle Network - Cards_19: -2145311937
+      Game Boy Advance - Mega Man Battle Network - Cards_145: 92834843
+      Game Boy Advance - Mega Man Battle Network - Cards_146: -1947815489
+      Game Boy Advance - Mega Man Battle Network - Cards_156: -309957931
+      Game Boy Advance - Mega Man Battle Network - Cards_58: 263729500
+      Game Boy Advance - Mega Man Battle Network - Cards_45: -1089643453
+      Game Boy Advance - Mega Man Battle Network - Cards_44: 259753244
+      Game Boy Advance - Mega Man Battle Network - Cards_68: -1091433406
+      Game Boy Advance - Mega Man Battle Network - Cards_73: 1145287993
+      07Sword: 1662939203
+      Game Boy Advance - Mega Man Battle Network - Cards_29: -816052112
+      Game Boy Advance - Mega Man Battle Network - Cards_130: -1963250740
+      Game Boy Advance - Mega Man Battle Network - Cards_6: -1565585029
+      Game Boy Advance - Mega Man Battle Network - Cards_114: 459503474
+      Game Boy Advance - Mega Man Battle Network - Cards_77: 1191024972
+      Game Boy Advance - Mega Man Battle Network - Cards_134: -1979459959
+      Game Boy Advance - Mega Man Battle Network - Cards_152: -574340626
+      Game Boy Advance - Mega Man Battle Network - Cards_105: -51034726
+      Game Boy Advance - Mega Man Battle Network - Cards_153: 1029806675
+      Game Boy Advance - Mega Man Battle Network - Cards_99: -383817851
+      Game Boy Advance - Mega Man Battle Network - Cards_118: -496149692
+      Game Boy Advance - Mega Man Battle Network - Cards_95: 1890664227
+      Game Boy Advance - Mega Man Battle Network - Cards_25: 1069775420
+      Game Boy Advance - Mega Man Battle Network - Cards_94: -1275618503
+      Game Boy Advance - Mega Man Battle Network - Cards_23: -353900313
+      Game Boy Advance - Mega Man Battle Network - Cards_35: -324852788
+      Game Boy Advance - Mega Man Battle Network - Cards_14: -914151471
+      Game Boy Advance - Mega Man Battle Network - Cards_17: 1906086858
+      Game Boy Advance - Mega Man Battle Network - Cards_56: -480569545
+      Game Boy Advance - Mega Man Battle Network - Cards_155: -1058986718
+      Game Boy Advance - Mega Man Battle Network - Cards_102: -298296109
+      Game Boy Advance - Mega Man Battle Network - Cards_85: -894872173
+      10FireSword: 1289294477
+      Game Boy Advance - Mega Man Battle Network - Cards_125: -1576330343
+      Game Boy Advance - Mega Man Battle Network - Cards_113: 1118892172
+      Game Boy Advance - Mega Man Battle Network - Cards_80: -2029241373
+      Game Boy Advance - Mega Man Battle Network - Cards_43: 284415398
+      Game Boy Advance - Mega Man Battle Network - Cards_30: -107657553
+      Game Boy Advance - Mega Man Battle Network - Cards_41: 133112643
+      Game Boy Advance - Mega Man Battle Network - Cards_55: -1992927814
+      Game Boy Advance - Mega Man Battle Network - Cards_60: 335094699
+      Game Boy Advance - Mega Man Battle Network - Cards_90: -1076230205
+      Game Boy Advance - Mega Man Battle Network - Cards_47: -1757717839
+      Game Boy Advance - Mega Man Battle Network - Cards_66: -1926934776
+      Game Boy Advance - Mega Man Battle Network - Cards_139: 1592799059
+      Game Boy Advance - Mega Man Battle Network - Cards_97: 805542370
+      Game Boy Advance - Mega Man Battle Network - Cards_26: 258303821
+      Game Boy Advance - Mega Man Battle Network - Cards_53: 1045603076
+      Game Boy Advance - Mega Man Battle Network - Cards_49: 1063769687
+      Game Boy Advance - Mega Man Battle Network - Cards_128: 1689242115
+      Game Boy Advance - Mega Man Battle Network - Cards_162: -1372144513
+      12ElecSword: 396839594
+      Game Boy Advance - Mega Man Battle Network - Cards_136: 406663957
+      Game Boy Advance - Mega Man Battle Network - Cards_167: 1815361476
+      Game Boy Advance - Mega Man Battle Network - Cards_117: -758885089
+      Game Boy Advance - Mega Man Battle Network - Cards_84: -1457454568
+      Game Boy Advance - Mega Man Battle Network - Cards_138: -728518865
+      Game Boy Advance - Mega Man Battle Network - Cards_154: 2029238427
+      Game Boy Advance - Mega Man Battle Network - Cards_159: 1180382549
+      Game Boy Advance - Mega Man Battle Network - Cards_131: -1669958830
+      Game Boy Advance - Mega Man Battle Network - Cards_129: -1322541273
+      Game Boy Advance - Mega Man Battle Network - Cards_132: 849088966
+      Game Boy Advance - Mega Man Battle Network - Cards_89: -90542654
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

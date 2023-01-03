@@ -12,6 +12,8 @@ public class PlayerData : MonoBehaviour
         Knight,
         Thief,
         Cleric,
+        Archer,
+        Wizard,
 
         Size
     };

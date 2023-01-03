@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
+
 public class ShowCard : MonoBehaviour
 {
     public CardDataBase m_base;
@@ -20,10 +21,17 @@ public class ShowCard : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI costText;
     [SerializeField]
-    private TextMeshProUGUI EffectText;
+    private TextMeshProUGUI effectText;
     [SerializeField]
-    private Image cardImage;
-
+    private Sprite cardImage;
+    public Image image;
+    private void Awake()
+    {
+        //nameText=GetComponentInChildren<TextMeshProUGUI>();
+        //costText=GetComponentInChildren<TextMeshProUGUI>();
+        //effectText=GetComponentInChildren<TextMeshProUGUI>();
+        //image= GetComponentInChildren<Image>();
+    }
     private void Start()
     {
         cards[0] = m_base.datas[thisId];
@@ -34,10 +42,11 @@ public class ShowCard : MonoBehaviour
         cardName = cards[0].CardName;
         cardCost = cards[0].Cost;
         Damage   = cards[0].Damage;
-
+        cardImage = cards[0].Image;
         nameText.text   = "" +  cardName;
         costText.text   = "" +  cardCost;
-        EffectText.text = " " + Damage;
+        effectText.text = " " + Damage;
+        image.sprite = cardImage;
 
     }
 
