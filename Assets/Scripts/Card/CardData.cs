@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+//카드 데이터만 저장
 [System.Serializable]
 public class CardData : ScriptableObject//MonoBehaviour
 {

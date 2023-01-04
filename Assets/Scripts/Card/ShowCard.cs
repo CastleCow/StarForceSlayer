@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-
-public class ShowCard : MonoBehaviour
+//카드를 보여주는 스크립트 
+public class ShowCard : MonoBehaviour//,IDraggable
 {
     private CardDataBase m_base;
     public List<CardData> cards=new List<CardData>();
@@ -49,5 +49,5 @@ public class ShowCard : MonoBehaviour
         image.sprite = cardImage;
 
     }
-
+        
 }

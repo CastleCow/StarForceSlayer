@@ -24,6 +24,7 @@ public class Deck : MonoBehaviour
             int rannum = Random.Range(1, 7);
             cards[i] = m_base.datas[rannum];
         }
+        //BaseDeck();
     }
     private void Shuffle()
     {
@@ -35,6 +36,17 @@ public class Deck : MonoBehaviour
             cards[randomIndex] = container[0];
         }
     }
-
+    private void BaseDeck()
+    {
+        int j = 0;
+        for(int i=0;i< DeckSize;i++)
+        {
+            if (i % 3 == 0)
+                    j++;
+            if (j > 6) j = 6;
+            cards[i].CardNum = j;
+        }
+        
+    }
 
 }
