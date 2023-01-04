@@ -8,7 +8,7 @@ using TMPro;
 
 public class ShowCard : MonoBehaviour
 {
-    public CardDataBase m_base;
+    private CardDataBase m_base;
     public List<CardData> cards=new List<CardData>();
     public int thisId=0;
 
@@ -27,17 +27,17 @@ public class ShowCard : MonoBehaviour
     public Image image;
     private void Awake()
     {
-        //nameText=GetComponentInChildren<TextMeshProUGUI>();
-        //costText=GetComponentInChildren<TextMeshProUGUI>();
-        //effectText=GetComponentInChildren<TextMeshProUGUI>();
-        //image= GetComponentInChildren<Image>();
+      
+       
     }
     private void Start()
     {
+        m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
         cards[0] = m_base.datas[thisId];
     }
     private void Update()
     {
+        cards[0] = m_base.datas[thisId];
         cardId   = cards[0].CardNum;
         cardName = cards[0].CardName;
         cardCost = cards[0].Cost;

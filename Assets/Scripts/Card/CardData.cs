@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public class CardData : MonoBehaviour
+public class CardData : ScriptableObject//MonoBehaviour
 {
     public int              CardNum;                     //카드 번호 (도감용)
     public string           CardName;                    //카드 이름 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-
+    private CardDataBase m_base;
     public List<CardData> cards = new List<CardData>();
     public List<CardData> container = new List<CardData>();
 
@@ -12,22 +12,27 @@ public class Deck : MonoBehaviour
     private int x = 0;
     private int DeckSize = 20;
 
+    private void Awake()
+    {
+        
+    }
     private void Start()
     {
-        for(int i=0;i<DeckSize;i++)
+        m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
+        for (int i = 0; i < DeckSize; i++)
         {
-            //cards[i] = CardDataBase.datas[0];
+            int rannum = Random.Range(1, 7);
+            cards[i] = m_base.datas[rannum];
         }
     }
-
     private void Shuffle()
     {
         for(int i = 0; i < DeckSize; i++)
         {
             container[0] = cards[i];
-            int randomIndex=Random.Range(0, DeckSize);
+            int randomIndex=Random.Range(i, DeckSize);
             cards[i] = cards[randomIndex];
-            cards[randomIndex] = container[randomIndex];
+            cards[randomIndex] = container[0];
         }
     }
 

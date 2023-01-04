@@ -11,6 +11,7 @@ public class CardDataBase : MonoBehaviour
 
     private void Awake()
     {
+        //CardData.CreateInstance(0, "NULL", CardAttackTarget.Range, 0, 0, 0, 0, null)
         datas.Add(new CardData(0,"NULL",        CardAttackTarget.Range,     0, 0, 0,0,null));
         datas.Add(new CardData(1,"Cannon",      CardAttackTarget.Raycast,   40,0,10,1,Resources.Load<Sprite>("00Cannon")));
         datas.Add(new CardData(2,"Cannon+",     CardAttackTarget.Raycast,   60,0,20,2,Resources.Load<Sprite>("01Cannon+")));
