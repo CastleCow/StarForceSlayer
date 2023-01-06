@@ -6,7 +6,7 @@ using UnityEngine;
 public class CardIndex : MonoBehaviour
 {
     private CardDataBase m_base;
-    private int indexcount = 0;
+    public int indexcount = 0;
     [SerializeField]
     private IndexData m_index;
     // Start is called before the first frame update
@@ -20,8 +20,9 @@ public class CardIndex : MonoBehaviour
     }
     private void ShowIndexCard()
     {
-        if (indexcount < m_base.datas.Count)
-        {   
+        if (indexcount < m_base.datas.Count-1)
+        {
+            Debug.Log("인덱스카운트:"+indexcount);
             Instantiate(m_index, transform);
             m_index.thisid= indexcount+1;
             indexcount++; 

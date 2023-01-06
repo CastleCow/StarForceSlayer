@@ -11,6 +11,7 @@ public class Deck : MonoBehaviour
 
     private int x = 0;
     private int DeckSize = 20;
+    private int MaxDeckSize = 30;
 
     private void Awake()
     {

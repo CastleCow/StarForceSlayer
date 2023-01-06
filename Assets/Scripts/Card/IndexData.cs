@@ -6,7 +6,7 @@ using UnityEngine;
 public class IndexData : MonoBehaviour
 {
     private CardDataBase m_base;
-    public int thisid;
+    public int thisid=0;
     private int cardNum;//카드 번호
     private string cardName;//카드 이름
     private int amount=0;//카드 소지량
@@ -15,7 +15,7 @@ public class IndexData : MonoBehaviour
 
     private void Awake()
     {
-        text= GetComponent<TextMeshProUGUI>();
+        //text= GetComponent<TextMeshProUGUI>();
     }
     private void Start()
     {
@@ -23,9 +23,16 @@ public class IndexData : MonoBehaviour
     }
     private void Update()
     {
+        ShowIndex();
+    }
+
+    private void ShowIndex()
+    {
+        
         cardNum = thisid;
+        cardName = m_base.datas[thisid].CardName;
+        
         //cardName = m_base.datas[thisid].name;
-        //cardName = m_base.datas[thisid].name;
-        //text.text = cardNum+" "+cardName+"  "+amount;
+        text.text = cardNum+" "+cardName+"  "+amount;
     }
 }

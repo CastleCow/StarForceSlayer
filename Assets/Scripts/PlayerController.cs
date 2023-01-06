@@ -123,4 +123,9 @@ public class PlayerController : MonoBehaviour
 			anim.SetLayerWeight(1, 0);
 		}
 	}
+
+    private void OnDrawGizmosSelected()
+    {
+        Debug.DrawRay(transform.position+new Vector3(0,0.3f,0),Vector3.forward*7f ,Color.cyan);
+    }
 }
