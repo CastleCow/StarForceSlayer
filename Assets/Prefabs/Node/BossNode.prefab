@@ -135,10 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89f670f37d6de14988dd4c49fe488c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeType: 3
+  nodeType: 6
   usedNode: 0
   prevNode: {fileID: 0}
-  nextNode: {fileID: 0}
+  nextNode:
+  - {fileID: 0}
 --- !u!1 &8936660033958674828
 GameObject:
   m_ObjectHideFlags: 0

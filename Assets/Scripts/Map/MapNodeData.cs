@@ -7,11 +7,12 @@ public class MapNodeData :MonoBehaviour
     public enum NodeType
     {
         Start,
+        Null,
         NormalBattle,
         EliteBattle,
-        BossBattle,
         Shop,
         Event,
+        BossBattle,
 
 
         Size
@@ -21,10 +22,10 @@ public class MapNodeData :MonoBehaviour
     public bool usedNode;
 
     public MapNodeData prevNode;
-    public MapNodeData nextNode;
+    public MapNodeData[] nextNode;
 
     public MapNodeData() { }
-    public MapNodeData(NodeType nodetype,bool usedNode, MapNodeData prevnode, MapNodeData nextnode)
+    public MapNodeData(NodeType nodetype,bool usedNode, MapNodeData prevnode, MapNodeData[] nextnode)
     {
         nodeType = nodetype;
         this.usedNode=usedNode;
