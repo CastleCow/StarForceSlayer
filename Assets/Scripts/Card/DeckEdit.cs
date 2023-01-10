@@ -32,6 +32,13 @@ public class DeckEdit : MonoBehaviour
             maxDeckCount++;
         }
     }
+    void AddCard()
+    {
+        
+    }
+    void RemoveCard()
+    {
 
-    
+    }
+
 }

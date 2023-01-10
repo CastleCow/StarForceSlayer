@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeckManager : SingleTon<DeckManager>
 {
-
+    public CardDataBase DataBase;
     public class Deck
     {
         private List<CardData> Cards;
