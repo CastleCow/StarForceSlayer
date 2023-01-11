@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MapNodeData :MonoBehaviour
 {
+    
     public enum NodeType
     {
         Start,
@@ -33,6 +35,33 @@ public class MapNodeData :MonoBehaviour
         nextNode=nextnode;
 
     }
-                                                  
+    public void NodeClick()
+    {
+        switch(nodeType)
+        {
+            case NodeType.Event:
+                //GameObject.FindWithTag("Event").SetActive(true);
+                GameManager.Instance.EventPop.SetActive(true);
+                break;
+
+            case NodeType.Shop:
+                //GameObject.FindGameObjectWithTag("Shop").SetActive(true);
+                GameManager.Instance.ShopPop.SetActive(true);
+                
+                break;
+
+            case NodeType.NormalBattle:
+                GameManager.Instance.LoadScene("BattleScene");
+                break;
+            case NodeType.EliteBattle:
+                GameManager.Instance.LoadScene("BattleScene");
+                break;
+            case NodeType.BossBattle:
+                GameManager.Instance.LoadScene("BattleScene");
+                break;
+        }
+        usedNode = true;
+     
+    }                                            
 
 }

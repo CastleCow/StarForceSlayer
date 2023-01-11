@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : SingleTon<GameManager>
 {
+    [SerializeField]
+    public GameObject EventPop;
+    [SerializeField]
+    public GameObject ShopPop;
     public void Resume()
     {
         Time.timeScale = 1f;
