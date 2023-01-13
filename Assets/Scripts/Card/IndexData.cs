@@ -13,14 +13,7 @@ public class IndexData : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
 
-    private void Awake()
-    {
-        //text= GetComponent<TextMeshProUGUI>();
-    }
-    private void Start()
-    {
-        m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
-    }
+    
     private void Update()
     {
         ShowIndex();
@@ -30,7 +23,7 @@ public class IndexData : MonoBehaviour
     {
         
         cardNum = thisid;
-        cardName = m_base.datas[thisid].CardName;
+        cardName = DataBaseManager.Instance.datas[thisid].CardName;
         
         //cardName = m_base.datas[thisid].name;
         text.text = cardNum+" "+cardName+"  "+amount;

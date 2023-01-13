@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class WolfMovement : MonoBehaviour
 {
+    private MonData Wolf;
     private float x, z;
     private int atkCount;
     [SerializeField]
@@ -12,19 +14,28 @@ public class WolfMovement : MonoBehaviour
     private Animator anim;
 
     [SerializeField]
+    private TextMeshProUGUI HP;
+
+    [SerializeField]
     private float moveDelay;
     private Coroutine moveRoutine;
+
+    [SerializeField]
+    private GameObject Plane;
+
+
 
     private void Start()
     {
         moveRoutine = StartCoroutine(MoveRoutine());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //yield return new WaitForSeconds(moveDelay);
-        //RandMoveWolf();
+   
+        //HP.text=""+ Wolf.curHp;
     }
 
     private IEnumerator MoveRoutine()
@@ -41,6 +52,7 @@ public class WolfMovement : MonoBehaviour
 
     private void RandMoveWolf()
     {
+        Plane.SetActive(false);
         //x=-1.2 0 1.2
         x = (Random.Range(0, 3)-1)*1.2f;
         //z=-1.25~2.5
@@ -61,6 +73,8 @@ public class WolfMovement : MonoBehaviour
         rigid.MovePosition(new Vector3(x, 0, -1.25f));
 
         anim.SetTrigger("Bite Attack");
+        Plane.SetActive(true);
+
     }
     private void OnDrawGizmosSelected()
     {
@@ -74,3 +88,5 @@ public class WolfMovement : MonoBehaviour
         return new Vector3(Mathf.Sin(radian), 0, Mathf.Cos(radian));
     }
 }
+
+

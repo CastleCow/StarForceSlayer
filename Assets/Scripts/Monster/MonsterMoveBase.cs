@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterBase : MonoBehaviour
+public class MonsterMoveBase : MonoBehaviour,IDamagable
 {
+    
     public virtual void Move()
     {
         Debug.Log("MonMove");
@@ -12,6 +13,10 @@ public class MonsterBase : MonoBehaviour
     {
 
         Debug.Log("MonAttack");
+    }
+    public virtual void TakeDamage(int damage)
+    {
+
     }
     
 }

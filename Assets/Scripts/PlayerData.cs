@@ -19,7 +19,9 @@ public class PlayerData : MonoBehaviour
     };
 
     public PlayerClass Class;
-    public List<GameObject> PDeck;
+    public List<CardData> PDeck;
+
+
 
 
 }

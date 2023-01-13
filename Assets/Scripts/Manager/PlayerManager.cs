@@ -17,5 +17,10 @@ public class PlayerManager : SingleTon<PlayerManager>
         set { player = PlayerData; } 
     }
 
+    private void Start()
+    {
+        player= new PlayerData();
+        playerDeck=GameObject.Find("Deck").GetComponent<Deck>();
+    }
 
 }

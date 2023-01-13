@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 enum PlayerState { Normal, Battle }
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerController : MonoBehaviour
+
+public class PlayerController : MonoBehaviour,IDamagable
 {
 	private Animator anim;
 	private CharacterController controller;
 	[SerializeField]
 	private Rigidbody rigid;
 
-    private PlayerState state;
+	private PlayerData pd;
+    
 	private float moveY;
 
 	[SerializeField]
@@ -20,8 +23,22 @@ public class PlayerController : MonoBehaviour
 	[SerializeField]
 	private float jumpSpeed;
 
-	[SerializeField]
-	private WeaponHolder weaponHolder;
+    [Header("Attack")]
+    [SerializeField]
+    private bool showAttackGizmos;
+    [SerializeField]
+    private WeaponHolder weaponHolder;
+    [SerializeField]
+    private float attackRange;
+    [SerializeField, Range(0f, 360f)]
+    private float attackAngle;
+    private int damage;
+
+
+    [SerializeField]
+	private TextMeshProUGUI HP;
+
+	
 
 	private void Awake()
 	{
@@ -32,47 +49,40 @@ public class PlayerController : MonoBehaviour
 
 	private void Start()
 	{
-		state = PlayerState.Normal;
+		
 		Cursor.lockState = CursorLockMode.Locked;
+		pd = GameObject.Find("Player").GetComponent<PlayerData>();
 	}
 
 	private void Update()
 	{
-		switch (state)
-		{
-			case PlayerState.Normal:
-				Move();
-				Rotate();
-				Jump();
-				ChangeForm();
-				break;
-			case PlayerState.Battle:
-				Move();
-				Rotate();
-				Jump();
-				Attack();
-				ChangeForm();
-				break;
-		}
-	}
+        Move();
+        Rotate();
+        Jump();
+        Attack();
+		Skill();
+
+		HP.text = "" + pd.CurHp;
+    }
 
 	private void Move()
 	{
-		Vector3 fowardVec = new Vector3(Camera.main.transform.forward.x, 0f, Camera.main.transform.forward.z).normalized;
-		Vector3 rightVec = new Vector3(Camera.main.transform.right.x, 0f, Camera.main.transform.right.z).normalized;
+		//Vector3 fowardVec = new Vector3(Camera.main.transform.forward.x, 0f, Camera.main.transform.forward.z).normalized;
+		//Vector3 rightVec = new Vector3(Camera.main.transform.right.x, 0f, Camera.main.transform.right.z).normalized;
 		Vector3 moveInput = Vector3.forward * Input.GetAxis("Vertical") + Vector3.right * Input.GetAxis("Horizontal");
 		if (moveInput.sqrMagnitude > 1f) moveInput.Normalize();
-		anim.SetFloat("XInput", Input.GetAxis("Horizontal"));
-		anim.SetFloat("YInput", Input.GetAxis("Vertical"));
-		Vector3 moveVec = fowardVec * moveInput.z + rightVec * moveInput.x;
+		//anim.SetFloat("XInput", Input.GetAxis("Horizontal"));
+		//anim.SetFloat("YInput", Input.GetAxis("Vertical"));
+		//Vector3 moveVec = fowardVec * moveInput.z + rightVec * moveInput.x;
 		//controller.Move(moveVec * moveSpeed* Time.deltaTime);
-		anim.SetFloat("MoveSpeed", moveSpeed);
+		//anim.SetFloat("MoveSpeed", moveSpeed);
         if(Input.GetButtonDown("Left")&&transform.position!=new Vector3(-1.2f, transform.position.y, transform.position.z))
               rigid.MovePosition(transform.position - Vector3.right *moveSpeed);
         if(Input.GetButtonDown("Right") && transform.position != new Vector3(1.2f, transform.position.y, transform.position.z))
               rigid.MovePosition(transform.position + Vector3.right * moveSpeed);
 
     }
+    
 
     private void Rotate()
 	{
@@ -87,12 +97,12 @@ public class PlayerController : MonoBehaviour
 		{
 			moveY = jumpSpeed;
 		}
-		else if (controller.isGrounded && moveY < 0)
+		//else if (controller.isGrounded && moveY < 0)
 		{
-			moveY = 0;
+		//	moveY = 0;
 		}
 
-		controller.Move(Vector3.up * moveY * Time.deltaTime);
+		//controller.Move(Vector3.up * moveY * Time.deltaTime);
 	}
 
 	private void Attack()
@@ -101,31 +111,59 @@ public class PlayerController : MonoBehaviour
 			return;
 
 		// 공격 진행
-	}
+		anim.SetTrigger("Attack");
+        RaycastHit hit;
+		if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity))
+		{
+			IDamagable target = hit.transform.GetComponent<IDamagable>();
+			target?.TakeDamage(damage);
+		}
+    }
 
-	private void ChangeForm()
+	private void Skill()
 	{
-		if (!Input.GetButtonDown("Fire2"))
-			return;
+        if (!Input.GetButtonDown("Fire2"))
+            return;
 
-		if (state == PlayerState.Normal)
-		{
-			state = PlayerState.Battle;
-			weaponHolder.ShowWeapon();
-			anim.SetTrigger("ChangeForm");
-			anim.SetLayerWeight(1, 1);
-		}
-		else if (state == PlayerState.Battle)
-		{
-			state = PlayerState.Normal;
-			weaponHolder.HideWeapon();
-			anim.SetTrigger("ChangeForm");
-			anim.SetLayerWeight(1, 0);
-		}
+		//카드 발동
+
+    }
+	public void TakeDamage(int damage)
+    {
+		pd.CurHp -= damage;
 	}
+    public void OnSkillkHit()
+    {
+        Debug.Log("공격 타이밍");
 
+        // 1. 범위내에 있는가
+        Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].gameObject.name != "Cube")
+                continue;
+
+            Vector3 dirToTarget = (colliders[i].transform.position - transform.position).normalized;
+
+            // 2. 각도내에 있는가
+            if (Vector3.Dot(transform.forward, dirToTarget) < Mathf.Cos(attackAngle * 0.5f * Mathf.Deg2Rad))
+                continue;
+
+            
+        }
+
+    }
     private void OnDrawGizmosSelected()
     {
         Debug.DrawRay(transform.position+new Vector3(0,0.3f,0),Vector3.forward*7f ,Color.cyan);
     }
+
 }
+
+
+/*
+ 기본 공격은 직선
+스킬은 범위 기즈모-자신 앞 가로3칸 -자신앞 세로2칸 
+소환계는 소환체의 범위뎀
+ 
+ */
