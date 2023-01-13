@@ -58,14 +58,18 @@ public class MapMaker : MonoBehaviour
     }
     private void ShowAllNode(int ran)
     {
-        //curNode = 0;
-        //if (curNode < maxNodeSize)
-        //{
-        //   
-        //    curNode++;
-        //}
+        
         Instantiate(mapNodeList[ran], transform);
     }
+    private void ShowAllNode()
+    {
+        for(int i=0;i<m_Nodes.Count;i++)
+        {
+            Instantiate(mapNodeList[(int)(m_Nodes[i].nodeType)], transform);
+        }
+    }
+    
+
     private void SetNextNode()
     {
         // m_Nodes[0].nextNode[0]=;

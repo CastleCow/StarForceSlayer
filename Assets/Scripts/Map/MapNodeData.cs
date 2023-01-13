@@ -22,7 +22,7 @@ public class MapNodeData :MonoBehaviour
     public NodeType nodeType;
 
     public bool usedNode;
-
+    public int? MonsCount;
     public MapNodeData prevNode;
     public MapNodeData[] nextNode;
 
@@ -33,6 +33,7 @@ public class MapNodeData :MonoBehaviour
         this.usedNode=usedNode;
         this.prevNode=prevnode;
         nextNode=nextnode;
+        if(nodeType==NodeType.NormalBattle|| nodeType == NodeType.EliteBattle ) { MonsCount = Random.Range(1, 3); }
 
     }
     public void NodeClick()
