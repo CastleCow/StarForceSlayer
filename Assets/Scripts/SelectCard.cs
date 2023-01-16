@@ -35,4 +35,10 @@ public class SelectCard : MonoBehaviour
         BattleManager.Instance.hands.Add(cardSelect);
         PlayerManager.Instance.cardUsingCost-=cardSelect.Cost;
     }
+    public void ToGrave()
+    {
+        BattleManager.Instance.hands.Remove(cardSelect);
+        BattleManager.Instance.grave.Add(cardSelect);
+
+    }
 }
