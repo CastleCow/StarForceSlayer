@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    
+
     public List<CardData> cards = new List<CardData>();
     public List<CardData> container = new List<CardData>();
 
@@ -15,7 +15,11 @@ public class Deck : MonoBehaviour
 
     private void Awake()
     {
-        
+        cards = new List<CardData>();
+        container = new List<CardData>
+        {
+            null
+        };
     }
     private void Start()
     {
@@ -33,7 +37,7 @@ public class Deck : MonoBehaviour
                 j++;
             if (j > 6) j = 6;
             cards.Add(null);
-            cards[i] = DataBaseManager.Instance.datas[j];
+            cards[i] = DataBaseManager.Instance.cardDatas[j];
         }
         //BaseDeck();
     }
@@ -50,15 +54,15 @@ public class Deck : MonoBehaviour
     private void BaseDeck()
     {
         int j = 0;
-        for(int i=0;i< MinDeckSize;i++)
+        for (int i = 0; i < MinDeckSize; i++)
         {
             if (i % 3 == 0)
-                    j++;
+                j++;
             if (j > 6) j = 6;
             cards.Add(null);
             cards[i].CardNum = j;
         }
-        
+
     }
     public List<CardData> GetCards() { return cards; }
 

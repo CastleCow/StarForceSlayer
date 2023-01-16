@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        inventory = DataBaseManager.Instance.datas;
+        inventory = DataBaseManager.Instance.cardDatas;
         Amount=new int[inventory.Count];
     }
     public void AcquireCard(CardData card)

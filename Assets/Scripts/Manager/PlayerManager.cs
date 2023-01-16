@@ -6,21 +6,31 @@ public class PlayerManager : SingleTon<PlayerManager>
 {
     private Deck playerDeck;
     private PlayerData player;
+    private Inventory playerInventory;
+
+    public int cardUsingCost = 6;
+    private Inventory PlayerInventory
+    {
+        get { return playerInventory; }
+        set {playerInventory=PlayerInventory;}
+    }
     public Deck PlayerDeck { 
         get { return playerDeck; }
         set { playerDeck = PlayerDeck; }
     }
 
-    public PlayerData PlayerData 
+    public PlayerData PlayerData1 
     { 
         get { return player; } 
-        set { player = PlayerData; } 
+        set { player = PlayerData1; } 
     }
 
     private void Start()
     {
         player= new PlayerData();
-        playerDeck=GameObject.Find("Deck").GetComponent<Deck>();
+        playerDeck=GameObject.Find("Manager").GetComponent<Deck>();
+        playerInventory= GameObject.Find("Manager").GetComponent<Inventory>();
+
     }
 
 }

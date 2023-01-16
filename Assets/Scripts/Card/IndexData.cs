@@ -23,7 +23,7 @@ public class IndexData : MonoBehaviour
     {
         
         cardNum = thisid;
-        cardName = DataBaseManager.Instance.datas[thisid].CardName;
+        cardName = DataBaseManager.Instance.cardDatas[thisid].CardName;
         
         //cardName = m_base.datas[thisid].name;
         text.text = cardNum+" "+cardName+"  "+amount;

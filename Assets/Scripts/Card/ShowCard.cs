@@ -32,12 +32,12 @@ public class ShowCard : MonoBehaviour//,IDraggable
     }
     private void Start()
     {
-        m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
-        cards[0] = m_base.datas[thisId];
+       // m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
+        cards[0] = DataBaseManager.Instance.cardDatas[thisId];
     }
     private void Update()
     {
-        cards[0] = m_base.datas[thisId];
+        cards[0] =DataBaseManager.Instance.cardDatas[thisId];
         cardId   = cards[0].CardNum;
         cardName = cards[0].CardName;
         cardCost = cards[0].Cost;
