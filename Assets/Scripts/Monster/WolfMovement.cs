@@ -28,14 +28,14 @@ public class WolfMovement : MonoBehaviour
     private void Start()
     {
         moveRoutine = StartCoroutine(MoveRoutine());
-        
+        Wolf = DataBaseManager.Instance.mons[1];
     }
 
     // Update is called once per frame
     void Update()
     {
    
-        //HP.text=""+ Wolf.curHp;
+        HP.text=""+ Wolf.curHp;
     }
 
     private IEnumerator MoveRoutine()

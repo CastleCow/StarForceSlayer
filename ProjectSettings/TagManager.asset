@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Event
   - Shop
+  - MAPSCENE
+  - BATTLESCENE
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class PlayerManager : SingleTon<PlayerManager>
     private PlayerData player;
     private Inventory playerInventory;
 
-    public int cardUsingCost = 6;
+    
     private Inventory PlayerInventory
     {
         get { return playerInventory; }
@@ -32,5 +32,6 @@ public class PlayerManager : SingleTon<PlayerManager>
         playerInventory= GameObject.Find("Manager").GetComponent<Inventory>();
 
     }
+
 
 }

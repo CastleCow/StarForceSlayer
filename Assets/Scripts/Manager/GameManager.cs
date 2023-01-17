@@ -9,6 +9,14 @@ public class GameManager : SingleTon<GameManager>
     public GameObject EventPop;
     [SerializeField]
     public GameObject ShopPop;
+
+    public GameObject mapscene;
+
+    private void Update()
+    {
+      
+    }
+
     public void Resume()
     {
         Time.timeScale = 1f;
@@ -21,6 +29,16 @@ public class GameManager : SingleTon<GameManager>
 
     public void LoadScene(string scene)
     {
-        SceneManager.LoadScene(scene);
+        //SceneManager.LoadScene(scene);
+        SceneManager.LoadSceneAsync(scene,LoadSceneMode.Additive);
+        mapscene.SetActive(false);
+
+        
     }
+    public void UnloadScene(string scene)
+    {
+        SceneManager.UnloadSceneAsync(scene);
+        mapscene.SetActive(true);
+    }
+
 }

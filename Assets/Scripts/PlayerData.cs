@@ -21,7 +21,7 @@ public class PlayerData : MonoBehaviour
     public PlayerClass Class;
     public List<CardData> PDeck;
 
-
+    public int CardUsingCost;
 
 
 }

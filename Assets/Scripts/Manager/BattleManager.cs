@@ -29,17 +29,23 @@ public class BattleManager : SingleTon<BattleManager>
     }
     private void Update()
     {
-        if(CardSelectCanvas.activeSelf==true) 
-        { 
-            GameManager.Instance.Pause(); 
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
+        if (CardSelectCanvas != null)
         {
-            GameManager.Instance.Resume();
-            Cursor.lockState = CursorLockMode.Locked;
+            if (CardSelectCanvas.activeSelf == true)
+            {
+                GameManager.Instance.Pause();
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                GameManager.Instance.Resume();
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
-     
+        if (PlayerManager.Instance.PlayerData1.CurHp < 0)
+        {
+            
+        }
         
     }
     public void ShowResultCanvas()
@@ -50,6 +56,7 @@ public class BattleManager : SingleTon<BattleManager>
     public void ShowCardSelectCanvas()
     {
         CardSelectCanvas.SetActive(true);
+
         Cursor.lockState = CursorLockMode.None;
         
     }
