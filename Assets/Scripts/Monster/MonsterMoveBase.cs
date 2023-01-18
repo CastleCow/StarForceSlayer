@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterMoveBase : MonoBehaviour,IDamagable
 {
-    
+    public MonData mondata;
     public virtual void Move()
     {
         Debug.Log("MonMove");
@@ -16,7 +16,7 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     }
     public virtual void TakeDamage(int damage)
     {
-
+        mondata.curHp-=damage;
     }
     
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class WolfMovement : MonoBehaviour
+public class WolfMovement : MonoBehaviour,IDamagable
 {
     private MonData Wolf;
     private float x, z;
@@ -75,6 +75,19 @@ public class WolfMovement : MonoBehaviour
         anim.SetTrigger("Bite Attack");
         Plane.SetActive(true);
 
+    }
+    public void TakeDamage(int damage)
+    {
+        Wolf.curHp-=damage;
+        if (Wolf.curHp <= 0)
+        {
+            IsDead();
+        }
+    }
+    private void IsDead()
+    {
+        BattleManager.Instance.MonsCount--;
+        gameObject.SetActive(false);
     }
     private void OnDrawGizmosSelected()
     {

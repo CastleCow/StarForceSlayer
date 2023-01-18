@@ -21,13 +21,15 @@ public class CanvasConnect : MonoBehaviour
         BattleManager.Instance.CardSelectCanvas= CardSelectCanvas;
         BattleManager.Instance.ResultCanvas= ResultCanvas;
         BattleManager.Instance.player =player;
-        PlayerManager.Instance.PlayerData1 = player;
+        //PlayerManager.Instance.PlayerData1 = player;
     }
     private void Update()
     {
-        text.text = "Cost" + PlayerManager.Instance.PlayerData1.CardUsingCost+"/6";
-        cardSprite = BattleManager.Instance.hands[0].Image;
-        image.sprite= cardSprite;
+        text.text = "Cost" + BattleManager.Instance.player.CardUsingCost + "/6";
+        if (BattleManager.Instance.hands != null) { 
+            cardSprite = BattleManager.Instance.hands[0].Image;
+            image.sprite = cardSprite; 
+        }
         cardName.text = "" + BattleManager.Instance.hands[0].CardName;
     }
 

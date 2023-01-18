@@ -23,8 +23,8 @@ public class BattleManager : SingleTon<BattleManager>
         deck= PlayerManager.Instance.PlayerDeck;
         hands= new List<CardData>();
         grave= new List<CardData>();
-        
-        player = GameObject.Find("Player").GetComponent<PlayerData>();
+
+        player = PlayerManager.Instance.PlayerData1;
         deck.Shuffle();
     }
     private void Update()

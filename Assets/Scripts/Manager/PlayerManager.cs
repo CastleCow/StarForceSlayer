@@ -9,7 +9,7 @@ public class PlayerManager : SingleTon<PlayerManager>
     private Inventory playerInventory;
 
     
-    private Inventory PlayerInventory
+    public Inventory PlayerInventory
     {
         get { return playerInventory; }
         set {playerInventory=PlayerInventory;}
@@ -27,7 +27,7 @@ public class PlayerManager : SingleTon<PlayerManager>
 
     private void Start()
     {
-        player= new PlayerData();
+        player= GameObject.Find("Manager").GetComponent<PlayerData>();
         playerDeck=GameObject.Find("Manager").GetComponent<Deck>();
         playerInventory= GameObject.Find("Manager").GetComponent<Inventory>();
 

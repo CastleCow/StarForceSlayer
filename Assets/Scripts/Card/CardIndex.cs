@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class CardIndex : MonoBehaviour
 {
-    private CardDataBase m_base;
-    public int indexcount = 0;
+    
+    
+    private int indexcount = 0;
     [SerializeField]
     private IndexData m_index;
     // Start is called before the first frame update
     void Start()
     {
-        m_base = GameObject.Find("CardDataBase").GetComponent<CardDataBase>();
+       indexcount= 0;
     }
     private void Update()
     {
@@ -20,7 +21,7 @@ public class CardIndex : MonoBehaviour
     }
     private void ShowIndexCard()
     {
-        if (indexcount < m_base.datas.Count-1)
+        if (indexcount < DataBaseManager.Instance.cardDatas.Count-1)
         {
             Debug.Log("인덱스카운트:"+indexcount);
             Instantiate(m_index, transform);

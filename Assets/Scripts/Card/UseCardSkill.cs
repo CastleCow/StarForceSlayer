@@ -11,3 +11,10 @@ public class UseCardSkill : MonoBehaviour
         
     }
 }
+
+
+/*
+ 카드 스킬 공용틀 
+ 카드는 레이케스트 타입-
+ 
+ */

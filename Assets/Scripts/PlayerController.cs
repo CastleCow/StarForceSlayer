@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour,IDamagable
 	private TextMeshProUGUI HP;
 
 	
-
 	private void Awake()
 	{
 		anim = GetComponentInChildren<Animator>();
@@ -51,7 +50,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 	{
 		
 		Cursor.lockState = CursorLockMode.Locked;
-		pd = GameObject.Find("Player").GetComponent<PlayerData>();
+		pd = BattleManager.Instance.player;
 	}
 
 	private void Update()
@@ -113,10 +112,10 @@ public class PlayerController : MonoBehaviour,IDamagable
 		// 공격 진행
 		anim.SetTrigger("Attack");
         RaycastHit hit;
-		if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, Mathf.Infinity))
+		if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.forward * 7f, out hit, Mathf.Infinity))
 		{
 			IDamagable target = hit.transform.GetComponent<IDamagable>();
-			target?.TakeDamage(damage);
+			target?.TakeDamage(BattleManager.Instance.player.BaseDamage);
 		}
     }
 
@@ -130,7 +129,9 @@ public class PlayerController : MonoBehaviour,IDamagable
     }
 	public void TakeDamage(int damage)
     {
+		anim.SetTrigger("Hit");
 		pd.CurHp -= damage;
+
 	}
     public void OnSkillkHit()
     {

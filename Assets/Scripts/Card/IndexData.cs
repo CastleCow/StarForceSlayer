@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class IndexData : MonoBehaviour
 {
-    private CardDataBase m_base;
+    
     public int thisid=0;
     private int cardNum;//카드 번호
     private string cardName;//카드 이름
@@ -24,8 +24,8 @@ public class IndexData : MonoBehaviour
         
         cardNum = thisid;
         cardName = DataBaseManager.Instance.cardDatas[thisid].CardName;
+        amount = PlayerManager.Instance.PlayerInventory.Amount[thisid];
         
-        //cardName = m_base.datas[thisid].name;
         text.text = cardNum+" "+cardName+"  "+amount;
     }
 }
