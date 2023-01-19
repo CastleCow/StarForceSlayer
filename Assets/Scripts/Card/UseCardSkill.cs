@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UseCardSkill : MonoBehaviour
 {
-    private CardData thiscard;
+    protected CardData thiscard;
 
-    public virtual void CardAttack()
+    public virtual void CardAttack(GameObject Player)
     {
         
     }

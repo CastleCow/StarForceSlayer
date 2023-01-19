@@ -29,4 +29,9 @@ public class CardIndex : MonoBehaviour
             indexcount++; 
         }
     }
+
+    public void ToDeck()
+    {
+
+    }
 }

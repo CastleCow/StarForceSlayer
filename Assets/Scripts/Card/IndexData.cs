@@ -28,4 +28,9 @@ public class IndexData : MonoBehaviour
         
         text.text = cardNum+" "+cardName+"  "+amount;
     }
+
+    public void ToDeck()
+    {
+
+    }
 }

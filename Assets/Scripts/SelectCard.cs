@@ -40,11 +40,11 @@ public class SelectCard : MonoBehaviour
     public void ToHand()
     {
         //선택된 카드의코스트합계가 현재플레이어 코스트보다 높을경우 리턴  
-        if (cost < cardSelect.Cost) { return; }
+        if (BattleManager.Instance.player.CardUsingCost < cardSelect.Cost) { return; }
 
         //this.gameObject.SetActive(false);
         BattleManager.Instance.hands.Add(cardSelect);
-        cost -= cardSelect.Cost;
+        BattleManager.Instance.player.CardUsingCost -= cardSelect.Cost;
     }
     public void ToGrave()
     {

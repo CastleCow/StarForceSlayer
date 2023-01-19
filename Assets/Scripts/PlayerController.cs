@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour,IDamagable
     private float attackRange;
     [SerializeField, Range(0f, 360f)]
     private float attackAngle;
-    private int damage;
+    
 
 
     [SerializeField]
@@ -131,7 +131,10 @@ public class PlayerController : MonoBehaviour,IDamagable
     {
 		anim.SetTrigger("Hit");
 		pd.CurHp -= damage;
-
+		if(pd.CurHp<=0)
+		{
+			GameManager.Instance.UnloadScene("BattleScene");
+		}
 	}
     public void OnSkillkHit()
     {
