@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class UseCardSkill : MonoBehaviour
 {
-    protected CardData thiscard;
+    public CardData thiscard;
 
+    protected virtual void Start()
+    {
+        thiscard = BattleManager.Instance.hands[0];   
+    }
+    protected virtual void Update()
+    {
+        thiscard = BattleManager.Instance.hands[0];
+    }
     public virtual void CardAttack(GameObject Player)
     {
         

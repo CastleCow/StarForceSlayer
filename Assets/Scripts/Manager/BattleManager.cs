@@ -7,7 +7,7 @@ public class BattleManager : SingleTon<BattleManager>
     public GameObject CardSelectCanvas;
     public GameObject ResultCanvas;
 
-    public int MonsCount;
+    public int MonsCount=1;
     public float BattleTimer;
     public PlayerData player;
 
@@ -29,9 +29,15 @@ public class BattleManager : SingleTon<BattleManager>
     }
     private void Update()
     {
+        BattleTimer += Time.deltaTime;
+        if (BattleTimer > 60 &&Input.GetButtonDown("TimeUp"))
+        {
+            ShowCardSelectCanvas();
+            BattleTimer = 0;
+        }
         if (CardSelectCanvas != null)
         {
-            if (CardSelectCanvas.activeSelf == true)
+            if (CardSelectCanvas.activeSelf == true|| ResultCanvas.activeSelf==true)
             {
                 GameManager.Instance.Pause();
                 Cursor.lockState = CursorLockMode.None;
@@ -46,8 +52,18 @@ public class BattleManager : SingleTon<BattleManager>
         {
             
         }
+        if (MonsCount < 0)
+        {
+            ShowResultCanvas();
+        }
         
     }
+
+    public void CardUsing()
+    {
+
+    }
+
     public void ShowResultCanvas()
     {
         ResultCanvas.SetActive(true);

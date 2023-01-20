@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 enum PlayerState { Normal, Battle }
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 	[SerializeField]
 	private Rigidbody rigid;
 
-	private PlayerData pd;
+	public PlayerData pd;
     
 	private float moveY;
 
@@ -32,7 +33,9 @@ public class PlayerController : MonoBehaviour,IDamagable
     private float attackRange;
     [SerializeField, Range(0f, 360f)]
     private float attackAngle;
-    
+
+	public UseCardSkill skill;
+
 
 
     [SerializeField]
@@ -61,7 +64,7 @@ public class PlayerController : MonoBehaviour,IDamagable
         Attack();
 		Skill();
 
-		HP.text = "" + pd.CurHp;
+		HP.text = "" + BattleManager.Instance.player.CurHp;
     }
 
 	private void Move()
@@ -90,7 +93,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	private void Jump()
 	{
-		moveY += Physics.gravity.y * Time.deltaTime;
+		//moveY += Physics.gravity.y * Time.deltaTime;
 
 		if (Input.GetButtonDown("Jump"))
 		{
@@ -106,7 +109,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	private void Attack()
 	{
-		if (!Input.GetButtonDown("Fire1"))
+		if (!Input.GetButtonDown("Fire1")||BattleManager.Instance.CardSelectCanvas.activeSelf==true)
 			return;
 
 		// 공격 진행
@@ -121,17 +124,35 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	private void Skill()
 	{
-        if (!Input.GetButtonDown("Fire2"))
+        if (!Input.GetButtonDown("Fire2")|| BattleManager.Instance.CardSelectCanvas.activeSelf == true)
             return;
 
-		//카드 발동
+		
+        skill.AddComponent<UseCardSkill>();
+        skill.CardAttack(this.gameObject);
+        //카드 발동
+  //      switch (BattleManager.Instance.hands[0].attackMethod) 
+		//{
+		//	case CardData.CardAttackTarget.Raycast:
+  //              useCard.AddComponent<Cannon>();
+  //              useCard.CardAttack(this.gameObject);
+  //              break;
+  //          case CardData.CardAttackTarget.Range:
+		//		useCard.AddComponent<Sword>();
+		//		useCard.CardAttack(this.gameObject);
+  //              break;
+  //          case CardData.CardAttackTarget.ToMe:
+  //              useCard.AddComponent<Heal>();
+  //              useCard.CardAttack(this.gameObject);
+  //              break;
+  //      }
 
     }
 	public void TakeDamage(int damage)
     {
 		anim.SetTrigger("Hit");
-		pd.CurHp -= damage;
-		if(pd.CurHp<=0)
+		BattleManager.Instance.player.CurHp -= damage;
+		if(BattleManager.Instance.player.CurHp<=0)
 		{
 			GameManager.Instance.UnloadScene("BattleScene");
 		}

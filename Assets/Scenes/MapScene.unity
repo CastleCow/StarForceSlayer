@@ -942,7 +942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654fcd5378ed6ab40ae9c60a767210ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexcount: 0
   m_index: {fileID: 7099082137266205085, guid: a8a2f1f01d5457e41a9b0cd1034b171e, type: 3}
 --- !u!1 &296914354
 GameObject:
@@ -2449,8 +2448,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66197880}
   m_HandleRect: {fileID: 66197879}
   m_Direction: 0
-  m_Value: 0.000000065936895
-  m_Size: 0.5430328
+  m_Value: 0.00000013187379
+  m_Size: 0.5483836
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3014,6 +3013,7 @@ GameObject:
   - component: {fileID: 1191178524}
   - component: {fileID: 1191178526}
   - component: {fileID: 1191178527}
+  - component: {fileID: 1191178528}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3068,7 +3068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191178518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 619.46857, y: 230.17366, z: -4.7276917}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3142,6 +3142,27 @@ MonoBehaviour:
   PlayerName: Archer
   Class: 3
   CardUsingCost: 6
+--- !u!114 &1191178528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191178518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd936e4afc25b364999c90bc66d7d612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardDatas:
+  - {fileID: 11400000, guid: 9096a7d671a1a6b48bea99a33ef59ac2, type: 2}
+  - {fileID: 11400000, guid: 9096a7d671a1a6b48bea99a33ef59ac2, type: 2}
+  - {fileID: 11400000, guid: 7626553fdfdb60742912a48a7b749452, type: 2}
+  - {fileID: 11400000, guid: 7fbeba4173b9da84cb8e1e59c9202a18, type: 2}
+  - {fileID: 11400000, guid: 675ecc31c79631d4aad623f0df2f7d02, type: 2}
+  - {fileID: 11400000, guid: 2f5dbc08e92151f4a9d7b8a6bd41a856, type: 2}
+  - {fileID: 11400000, guid: 585b6e9b12c765c4c8ca849e2182a7e9, type: 2}
+  mons: []
 --- !u!1 &1196354589
 GameObject:
   m_ObjectHideFlags: 0

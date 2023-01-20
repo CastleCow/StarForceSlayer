@@ -9,18 +9,18 @@ public class SelectCard : MonoBehaviour
 
     public CardData cardSelect;
 
-    public int cost;
+    
 
     private void Start()
     {
         //showCards = new ShowCard[6];
         cardSelect = new CardData();  
-        cost=PlayerManager.Instance.PlayerData1.CardUsingCost;
+        
         Show();
     }
     private void OnEnable()
     {
-        cost=PlayerManager.Instance.PlayerData1.CardUsingCost;
+        
         Show();
     }
     private void Show()
@@ -33,7 +33,7 @@ public class SelectCard : MonoBehaviour
 
     public void CardSelection(ShowCard card)
     {
-        if (cost < cardSelect.Cost) { card.gameObject.SetActive(true); return; }
+        if (BattleManager.Instance.player.CardUsingCost < cardSelect.Cost) { card.gameObject.SetActive(true); return; }
         int i = card.cardId;
         cardSelect = DataBaseManager.Instance.cardDatas[i];
     }
@@ -44,12 +44,13 @@ public class SelectCard : MonoBehaviour
 
         //this.gameObject.SetActive(false);
         BattleManager.Instance.hands.Add(cardSelect);
+        BattleManager.Instance.deck.Remove(cardSelect);
         BattleManager.Instance.player.CardUsingCost -= cardSelect.Cost;
     }
     public void ToGrave()
     {
-        BattleManager.Instance.hands.Remove(cardSelect);
         BattleManager.Instance.grave.Add(cardSelect);
+        BattleManager.Instance.hands.Remove(cardSelect);
 
     }
 }

@@ -13,7 +13,7 @@ public class CanvasConnect : MonoBehaviour
     public TextMeshProUGUI text;
 
     public Sprite cardSprite;
-    public Image image;
+    public Image[] image;
     public TextMeshProUGUI cardName;
 
     private void Start()
@@ -26,9 +26,12 @@ public class CanvasConnect : MonoBehaviour
     private void Update()
     {
         text.text = "Cost" + BattleManager.Instance.player.CardUsingCost + "/6";
-        if (BattleManager.Instance.hands != null) { 
-            cardSprite = BattleManager.Instance.hands[0].Image;
-            image.sprite = cardSprite; 
+        if (BattleManager.Instance.hands != null) {
+            for (int i = 0; i < BattleManager.Instance.hands.Count; i++)
+            {
+                cardSprite = BattleManager.Instance.hands[i].Image;
+                image[i].sprite = cardSprite;
+            }
         }
         cardName.text = "" + BattleManager.Instance.hands[0].CardName;
     }
@@ -37,6 +40,7 @@ public class CanvasConnect : MonoBehaviour
     {
 
         GameManager.Instance.UnloadScene("BattleScene");
+        Cursor.lockState= CursorLockMode.Confined;
     }
 
 }

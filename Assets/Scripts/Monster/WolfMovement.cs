@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class WolfMovement : MonoBehaviour,IDamagable
@@ -23,7 +24,7 @@ public class WolfMovement : MonoBehaviour,IDamagable
     [SerializeField]
     private GameObject Plane;
 
-
+    
 
     private void Start()
     {
@@ -75,6 +76,14 @@ public class WolfMovement : MonoBehaviour,IDamagable
         anim.SetTrigger("Bite Attack");
         Plane.SetActive(true);
 
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.back * 7f, out hit, Mathf.Infinity,LayerMask.GetMask("Player")))
+        {
+            IDamagable target = hit.transform.GetComponent<IDamagable>();
+            target?.TakeDamage(Wolf.baseDamage);
+        }
+
+
     }
     public void TakeDamage(int damage)
     {
@@ -93,6 +102,8 @@ public class WolfMovement : MonoBehaviour,IDamagable
     {
         Vector3 dir = AngleToDir(transform.eulerAngles.z );
         Debug.DrawRay(transform.position+new Vector3(0,0.7f,-0.3f),Vector3.down-dir*1.0f, Color.red);
+
+        Debug.DrawRay(transform.position + new Vector3(0, 0.3f, 0), Vector3.back * 7f, Color.green);
     }
 
     private Vector3 AngleToDir(float angle)
