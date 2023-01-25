@@ -26,14 +26,27 @@ public class CanvasConnect : MonoBehaviour
     private void Update()
     {
         text.text = "Cost" + BattleManager.Instance.player.CardUsingCost + "/6";
-        if (BattleManager.Instance.hands != null) {
+        /*if (BattleManager.Instance.hands != null) {
             for (int i = 0; i < BattleManager.Instance.hands.Count; i++)
             {
-                cardSprite = BattleManager.Instance.hands[i].Image;
+                if (BattleManager.Instance.hands.Count == 1)
+                    cardSprite = BattleManager.Instance.hands[i].Image;
+                else
+                    cardSprite = BattleManager.Instance.hands[i].Image;
                 image[i].sprite = cardSprite;
             }
+        }*/
+        if (BattleManager.Instance.hands.Count == 1)
+        {
+            cardName.text = "" + BattleManager.Instance.hands[0].CardName;
+            cardSprite = BattleManager.Instance.hands[0].Image;
         }
-        cardName.text = "" + BattleManager.Instance.hands[0].CardName;
+        else
+        { 
+            cardName.text = "" + BattleManager.Instance.hands[1].CardName;
+            cardSprite = BattleManager.Instance.hands[1].Image;
+        }
+        image[0].sprite = cardSprite;
     }
 
     public void Run()

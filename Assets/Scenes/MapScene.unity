@@ -3122,7 +3122,8 @@ MonoBehaviour:
   player: {fileID: 1191178527}
   mons: {fileID: 0}
   deck: {fileID: 0}
-  hands: []
+  hands:
+  - {fileID: 11400000, guid: ccef4bea6c8c46f4b926454434225126, type: 2}
   grave: []
 --- !u!114 &1191178527
 MonoBehaviour:

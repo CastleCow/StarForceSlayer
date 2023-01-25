@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+[CreateAssetMenu(menuName = "Monster")]
 public class MonData : ScriptableObject
 {
     public int monNum;
@@ -17,6 +19,9 @@ public class MonData : ScriptableObject
 
     }
     public MonsterType type;
+
+    public GameObject prefab;
+
     public MonData() { }
     public MonData(int monNum, string monName, int maxHp,MonsterType type,  int baseDamage)
     {
@@ -27,4 +32,6 @@ public class MonData : ScriptableObject
         this.type = type;
         this.baseDamage = baseDamage;
     }
+
+
 }

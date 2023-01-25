@@ -29,8 +29,8 @@ public class GameManager : SingleTon<GameManager>
 
     public void LoadScene(string scene)
     {
-        //SceneManager.LoadScene(scene);
-        SceneManager.LoadSceneAsync(scene,LoadSceneMode.Additive);
+        SceneManager.LoadScene(scene,LoadSceneMode.Additive);
+        //SceneManager.LoadSceneAsync(scene,LoadSceneMode.Additive);
         mapscene.SetActive(false);
 
         

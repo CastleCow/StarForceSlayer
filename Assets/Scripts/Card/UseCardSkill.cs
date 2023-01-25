@@ -8,15 +8,15 @@ public class UseCardSkill : MonoBehaviour
 
     protected virtual void Start()
     {
-        thiscard = BattleManager.Instance.hands[0];   
+        thiscard = BattleManager.Instance.hands[1];   
     }
     protected virtual void Update()
     {
-        thiscard = BattleManager.Instance.hands[0];
+        //thiscard = BattleManager.Instance.hands[1];
     }
     public virtual void CardAttack(GameObject Player)
     {
-        
+        Debug.Log("카드부모는 사용함");
     }
 }
 

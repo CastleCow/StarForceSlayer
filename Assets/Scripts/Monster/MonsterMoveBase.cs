@@ -5,6 +5,7 @@ using UnityEngine;
 public class MonsterMoveBase : MonoBehaviour,IDamagable
 {
     public MonData mondata;
+
     public virtual void Move()
     {
         Debug.Log("MonMove");

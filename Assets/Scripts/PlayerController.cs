@@ -124,30 +124,34 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	private void Skill()
 	{
-        if (!Input.GetButtonDown("Fire2")|| BattleManager.Instance.CardSelectCanvas.activeSelf == true)
+        if (!Input.GetButtonDown("Fire2")|| BattleManager.Instance.CardSelectCanvas.activeSelf == true|| BattleManager.Instance.hands.Count==1)
             return;
 
 		
-        skill.AddComponent<UseCardSkill>();
+        //skill.AddComponent<UseCardSkill>();
+		skill = BattleManager.Instance.hands[1].thisSkill;
+        //skill.thiscard = BattleManager.Instance.hands[1];
         skill.CardAttack(this.gameObject);
-        //카드 발동
-  //      switch (BattleManager.Instance.hands[0].attackMethod) 
-		//{
-		//	case CardData.CardAttackTarget.Raycast:
-  //              useCard.AddComponent<Cannon>();
-  //              useCard.CardAttack(this.gameObject);
-  //              break;
-  //          case CardData.CardAttackTarget.Range:
-		//		useCard.AddComponent<Sword>();
-		//		useCard.CardAttack(this.gameObject);
-  //              break;
-  //          case CardData.CardAttackTarget.ToMe:
-  //              useCard.AddComponent<Heal>();
-  //              useCard.CardAttack(this.gameObject);
-  //              break;
-  //      }
+		//카드 발동
+		/*      switch (BattleManager.Instance.hands[0].attackMethod) 
+			  {
+				  case CardData.CardAttackTarget.Raycast:
+					  useCard.AddComponent<Cannon>();
+					  useCard.CardAttack(this.gameObject);
+					  break;
+				  case CardData.CardAttackTarget.Range:
+					  useCard.AddComponent<Sword>();
+					  useCard.CardAttack(this.gameObject);
+					  break;
+				  case CardData.CardAttackTarget.ToMe:
+					  useCard.AddComponent<Heal>();
+					  useCard.CardAttack(this.gameObject);
+					  break;
+			  }*/
+		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);
+		BattleManager.Instance.hands.RemoveAt(1);
 
-    }
+	}
 	public void TakeDamage(int damage)
     {
 		anim.SetTrigger("Hit");
@@ -181,6 +185,21 @@ public class PlayerController : MonoBehaviour,IDamagable
     private void OnDrawGizmosSelected()
     {
         Debug.DrawRay(transform.position+new Vector3(0,0.3f,0),Vector3.forward*7f ,Color.cyan);
+
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 2);
+
+        Vector3 rightDir = AngleToDir(transform.eulerAngles.y + 90 * 0.5f);
+        Vector3 leftDir = AngleToDir(transform.eulerAngles.y - 90 * 0.5f);
+        Debug.DrawRay(transform.position, rightDir * 100, Color.blue);
+        Debug.DrawRay(transform.position, leftDir * 100, Color.blue);
+
+    }
+    private Vector3 AngleToDir(float angle)
+    {
+        float radian = angle * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Sin(radian), 0, Mathf.Cos(radian));
     }
 
 }

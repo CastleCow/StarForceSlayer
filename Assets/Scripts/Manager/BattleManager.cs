@@ -21,7 +21,7 @@ public class BattleManager : SingleTon<BattleManager>
     private void Start()
     {
         deck= PlayerManager.Instance.PlayerDeck;
-        hands= new List<CardData>();
+        //hands= new List<CardData>();
         grave= new List<CardData>();
 
         player = PlayerManager.Instance.PlayerData1;
