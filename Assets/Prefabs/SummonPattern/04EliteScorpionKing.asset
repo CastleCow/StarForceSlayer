@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e85949ce6eb4cb4484974ebfcf17815, type: 3}
   m_Name: 04EliteScorpionKing
   m_EditorClassIdentifier: 
-  type: 0
-  monCount: 0
-  mons: []
-  StartPosition: []
+  type: 3
+  monCount: 2
+  mons:
+  - {fileID: 0}
+  - {fileID: 0}
+  StartPosition:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}

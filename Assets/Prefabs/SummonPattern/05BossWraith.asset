@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e85949ce6eb4cb4484974ebfcf17815, type: 3}
   m_Name: 05BossWraith
   m_EditorClassIdentifier: 
-  type: 0
-  monCount: 0
-  mons: []
-  StartPosition: []
+  type: 6
+  monCount: 1
+  mons:
+  - {fileID: 11400000, guid: 6c607fcb919d3b8409051266ee2d3ec3, type: 2}
+  StartPosition:
+  - {x: 0, y: 0, z: 1.25}

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monNum: 4
   monName: ScorpionKing
-  maxHp: 120
-  curHp: 120
+  maxHp: 200
+  curHp: 200
   baseDamage: 30
   type: 2
   prefab: {fileID: 0}
