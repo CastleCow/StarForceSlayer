@@ -10,6 +10,7 @@ public class Sword : UseCardSkill
     public override void CardAttack(GameObject Player)
     {
         Debug.Log("소드");
+        animTrigger = "Sword";
         this.attackRange = thiscard.AttackRange*2;
         this.attackAngle = thiscard.AttackAngle*30;
         // 1. 범위내에 있는가

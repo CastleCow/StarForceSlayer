@@ -128,26 +128,12 @@ public class PlayerController : MonoBehaviour,IDamagable
             return;
 
 		
-        //skill.AddComponent<UseCardSkill>();
-		skill = BattleManager.Instance.hands[1].thisSkill;
-        //skill.thiscard = BattleManager.Instance.hands[1];
-        skill.CardAttack(this.gameObject);
+        
 		//카드 발동
-		/*      switch (BattleManager.Instance.hands[0].attackMethod) 
-			  {
-				  case CardData.CardAttackTarget.Raycast:
-					  useCard.AddComponent<Cannon>();
-					  useCard.CardAttack(this.gameObject);
-					  break;
-				  case CardData.CardAttackTarget.Range:
-					  useCard.AddComponent<Sword>();
-					  useCard.CardAttack(this.gameObject);
-					  break;
-				  case CardData.CardAttackTarget.ToMe:
-					  useCard.AddComponent<Heal>();
-					  useCard.CardAttack(this.gameObject);
-					  break;
-			  }*/
+		skill = BattleManager.Instance.hands[1].thisSkill;
+        skill.CardAttack(this.gameObject);
+		anim.SetTrigger(skill.animTrigger);
+		
 		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);
 		BattleManager.Instance.hands.RemoveAt(1);
 

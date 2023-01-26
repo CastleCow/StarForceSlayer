@@ -5,7 +5,7 @@ using UnityEngine;
 public class UseCardSkill : MonoBehaviour
 {
     public CardData thiscard;
-
+    public string animTrigger;
     protected virtual void Start()
     {
         thiscard = BattleManager.Instance.hands[1];   

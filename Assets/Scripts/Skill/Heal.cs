@@ -7,6 +7,7 @@ public class Heal : UseCardSkill
     public override void CardAttack(GameObject Player)
     {
         Debug.Log("Heal");
+        animTrigger = "Heal";
         BattleManager.Instance.player.CurHp += thiscard.Damage;
     }
 }

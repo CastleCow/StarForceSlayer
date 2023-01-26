@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38054d9117bf62941aa5102237e4ce19, type: 3}
+  m_Name: Wolf
+  m_EditorClassIdentifier: 
+  monNum: 1
+  monName: Wolf
+  maxHp: 40
+  curHp: 40
+  baseDamage: 10
+  type: 1
+  prefab: {fileID: 318109228155229224, guid: bfce3502740f68649ba5504a0430ee0f, type: 3}
