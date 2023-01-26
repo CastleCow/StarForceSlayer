@@ -9,9 +9,9 @@ public class ScorpionMovement : MonsterMoveBase
         while (true)
         {
             yield return new WaitForSeconds(moveDelay);
-            if ( )
+           // if ( )
                 Move();
-            else
+            //else
                 Attack();
         }
     }
@@ -27,7 +27,12 @@ public class ScorpionMovement : MonsterMoveBase
     }
     public override void Attack()
     {
-        
+        if((-1.25<transform.position.x&& transform.position.x<-1.15)|| 
+            (-0.05 < transform.position.x && transform.position.x < 0.05)||
+            (1.15 < transform.position.x && transform.position.x < 1.25))
+        {
+            return;
+        }
     }
 }
  /*
