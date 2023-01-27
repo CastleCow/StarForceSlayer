@@ -12,7 +12,8 @@ public class UseCardSkill : MonoBehaviour
     }
     protected virtual void Update()
     {
-        //thiscard = BattleManager.Instance.hands[1];
+        if(BattleManager.Instance.hands.Count!=1)
+        thiscard = BattleManager.Instance.hands[1];
     }
     public virtual void CardAttack(GameObject Player)
     {

@@ -8,6 +8,7 @@ public class WolfMovement : MonoBehaviour,IDamagable
 {
     private MonData Wolf;
     private float x, z;
+    private int curhp;
     private int atkCount;
     [SerializeField]
     private Rigidbody rigid;
@@ -30,13 +31,14 @@ public class WolfMovement : MonoBehaviour,IDamagable
     {
         moveRoutine = StartCoroutine(MoveRoutine());
         Wolf = DataBaseManager.Instance.mons[1];
+        curhp = Wolf.curHp;
     }
 
     // Update is called once per frame
     void Update()
     {
    
-        HP.text=""+ Wolf.curHp;
+        HP.text=""+curhp;
     }
 
     private IEnumerator MoveRoutine()
@@ -50,14 +52,19 @@ public class WolfMovement : MonoBehaviour,IDamagable
                 WolfAttack();
         }
     }
+    public void NextPos()
+    {
+        //x=-1.2 0 1.2
+        x = (Random.Range(0, 3) - 1) * 1.2f;
+        //z=-1.25~2.5
+        z = (Random.Range(0, 4) - 1) * 1.25f;
 
+    }
     private void RandMoveWolf()
     {
         Plane.SetActive(false);
         //x=-1.2 0 1.2
-        x = (Random.Range(0, 3)-1)*1.2f;
-        //z=-1.25~2.5
-        z = (Random.Range(0, 4)-1)*1.25f;
+        NextPos();
 
 
         rigid.MovePosition(new Vector3(x, 0.5f, z));
@@ -87,8 +94,8 @@ public class WolfMovement : MonoBehaviour,IDamagable
     }
     public void TakeDamage(int damage)
     {
-        Wolf.curHp-=damage;
-        if (Wolf.curHp <= 0)
+        curhp-=damage;
+        if (curhp <= 0)
         {
             IsDead();
         }

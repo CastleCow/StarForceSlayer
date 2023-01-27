@@ -15,10 +15,14 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     protected Coroutine moveRoutine;
     [SerializeField]
     protected TextMeshProUGUI HP;
-
+    protected int curHp;
+    private void Start()
+    {
+        curHp = mondata.curHp;
+    }
     protected void Update()
     {
-        HP.text =""+ mondata.curHp;
+        HP.text =""+ curHp;
     }
    
     public virtual void Move()
@@ -32,8 +36,8 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     }
     public virtual void TakeDamage(int damage)
     {
-        mondata.curHp-=damage;
-        if (mondata.curHp <= 0)
+        curHp-=damage;
+        if (curHp <= 0)
         {
             IsDead();
         }

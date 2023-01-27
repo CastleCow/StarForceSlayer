@@ -52,12 +52,17 @@ public class MapNodeData :MonoBehaviour
                 break;
 
             case NodeType.NormalBattle:
+                int i=Random.Range(0, 3);
+                BattleManager.Instance.Sp = DataBaseManager.Instance.summonPatterns[i];
                 GameManager.Instance.LoadScene("BattleScene");
                 break;
             case NodeType.EliteBattle:
+
+                BattleManager.Instance.Sp = DataBaseManager.Instance.summonPatterns[3];
                 GameManager.Instance.LoadScene("BattleScene");
                 break;
             case NodeType.BossBattle:
+                BattleManager.Instance.Sp = DataBaseManager.Instance.summonPatterns[4];
                 GameManager.Instance.LoadScene("BattleScene");
                 break;
         }

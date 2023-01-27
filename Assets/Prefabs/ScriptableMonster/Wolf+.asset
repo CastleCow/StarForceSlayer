@@ -18,4 +18,4 @@ MonoBehaviour:
   curHp: 80
   baseDamage: 15
   type: 1
-  prefab: {fileID: 7034936933901343910, guid: a2212a2a23e6f1146b09d824a13867c2, type: 3}
+  prefab: {fileID: 3179731248246652196, guid: a2212a2a23e6f1146b09d824a13867c2, type: 3}

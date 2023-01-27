@@ -37,8 +37,12 @@ public class GameManager : SingleTon<GameManager>
     }
     public void UnloadScene(string scene)
     {
+        for(int i = 0;i< BattleManager.Instance.monsters.Count;i++)
+            Destroy(BattleManager.Instance.monsters[i]);
+        BattleManager.Instance.MonsCount++;
         SceneManager.UnloadSceneAsync(scene);
         mapscene.SetActive(true);
+       
     }
 
 }

@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour,IDamagable
     [SerializeField, Range(0f, 360f)]
     private float attackAngle;
 
-	public UseCardSkill skill;
+	public UseCardSkill skill=new UseCardSkill();
 
 
 
@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 	private void Awake()
 	{
 		anim = GetComponentInChildren<Animator>();
+		skill = GetComponent<UseCardSkill>();
 		controller = GetComponent<CharacterController>();
 		rigid= controller.GetComponent<Rigidbody>();
 	}
@@ -69,15 +70,10 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	private void Move()
 	{
-		//Vector3 fowardVec = new Vector3(Camera.main.transform.forward.x, 0f, Camera.main.transform.forward.z).normalized;
-		//Vector3 rightVec = new Vector3(Camera.main.transform.right.x, 0f, Camera.main.transform.right.z).normalized;
+		
 		Vector3 moveInput = Vector3.forward * Input.GetAxis("Vertical") + Vector3.right * Input.GetAxis("Horizontal");
 		if (moveInput.sqrMagnitude > 1f) moveInput.Normalize();
-		//anim.SetFloat("XInput", Input.GetAxis("Horizontal"));
-		//anim.SetFloat("YInput", Input.GetAxis("Vertical"));
-		//Vector3 moveVec = fowardVec * moveInput.z + rightVec * moveInput.x;
-		//controller.Move(moveVec * moveSpeed* Time.deltaTime);
-		//anim.SetFloat("MoveSpeed", moveSpeed);
+		
         if(Input.GetButtonDown("Left")&&transform.position!=new Vector3(-1.2f, transform.position.y, transform.position.z))
               rigid.MovePosition(transform.position - Vector3.right *moveSpeed);
         if(Input.GetButtonDown("Right") && transform.position != new Vector3(1.2f, transform.position.y, transform.position.z))
@@ -129,11 +125,13 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 		
         
+
+		Debug.Log(gameObject);
 		//카드 발동
 		skill = BattleManager.Instance.hands[1].thisSkill;
         skill.CardAttack(this.gameObject);
-		anim.SetTrigger(skill.animTrigger);
-		
+		//anim.SetTrigger(skill.animTrigger);
+		Debug.Log("스킬사용");
 		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);
 		BattleManager.Instance.hands.RemoveAt(1);
 

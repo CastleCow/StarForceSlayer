@@ -7,7 +7,7 @@ public class BattleManager : SingleTon<BattleManager>
     public GameObject CardSelectCanvas;
     public GameObject ResultCanvas;
 
-    public int MonsCount=1;
+    public int MonsCount=10;
     public float BattleTimer;
     public PlayerData player;
 
@@ -16,10 +16,12 @@ public class BattleManager : SingleTon<BattleManager>
     public Deck deck;
     public List<CardData> hands;
     public List<CardData> grave;
-
+    public SummonPattern Sp;
+    public List<GameObject> monsters;
 
     private void Start()
     {
+        MonsCount = 10;
         deck= PlayerManager.Instance.PlayerDeck;
         //hands= new List<CardData>();
         grave= new List<CardData>();
@@ -30,7 +32,7 @@ public class BattleManager : SingleTon<BattleManager>
     private void Update()
     {
         BattleTimer += Time.deltaTime;
-        if (BattleTimer > 60 &&Input.GetButtonDown("TimeUp"))
+        if (BattleTimer > 30 &&Input.GetButtonDown("TimeUp"))
         {
             ShowCardSelectCanvas();
             BattleTimer = 0;
@@ -52,7 +54,7 @@ public class BattleManager : SingleTon<BattleManager>
         {
             
         }
-        if (MonsCount < 0)
+        if (MonsCount <= 0)
         {
             ShowResultCanvas();
         }

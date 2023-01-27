@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: 04EliteScorpionKing
   m_EditorClassIdentifier: 
   type: 3
-  monCount: 2
+  monCount: 3
   mons:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   StartPosition:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 2.5}
+  - {x: -1.2, y: 0, z: 1.25}
+  - {x: 1.2, y: 0, z: 0}
