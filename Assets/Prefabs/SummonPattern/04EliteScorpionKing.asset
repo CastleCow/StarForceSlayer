@@ -15,9 +15,9 @@ MonoBehaviour:
   type: 3
   monCount: 3
   mons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: db55bc5ac92f2794fab152937167bbe6, type: 2}
+  - {fileID: 11400000, guid: f473c572058848c45b7c798bbfae0a56, type: 2}
+  - {fileID: 11400000, guid: f473c572058848c45b7c798bbfae0a56, type: 2}
   StartPosition:
   - {x: 0, y: 0, z: 2.5}
   - {x: -1.2, y: 0, z: 1.25}

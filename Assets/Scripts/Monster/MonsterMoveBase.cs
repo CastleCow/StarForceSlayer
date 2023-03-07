@@ -45,6 +45,7 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     protected void IsDead()
     {
         BattleManager.Instance.MonsCount--;
+        //ªÁ∏¡ ¿Ã∆Â∆Æ
         gameObject.SetActive(false);
     }
 }

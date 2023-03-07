@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class ScorpionMovement : MonsterMoveBase
@@ -33,6 +34,17 @@ public class ScorpionMovement : MonsterMoveBase
         {
             return;
         }
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.back * 7f, out hit, Mathf.Infinity, LayerMask.GetMask("Player")))
+        {
+            
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        IDamagable target = other.transform.GetComponent<IDamagable>();
+        target?.TakeDamage(mondata.baseDamage);
     }
 }
  /*

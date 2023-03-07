@@ -3126,6 +3126,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ccef4bea6c8c46f4b926454434225126, type: 2}
   grave: []
   Sp: {fileID: 0}
+  monsters: []
 --- !u!114 &1191178527
 MonoBehaviour:
   m_ObjectHideFlags: 0
