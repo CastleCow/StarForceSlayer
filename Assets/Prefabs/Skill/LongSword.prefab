@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1760190092775247050}
   - component: {fileID: 7263418826251786419}
   m_Layer: 0
-  m_Name: Sword
+  m_Name: LongSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d76858637c7f64299bffba400fe98c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thiscard: {fileID: 11400000, guid: 7fbeba4173b9da84cb8e1e59c9202a18, type: 2}
+  thiscard: {fileID: 11400000, guid: 2f5dbc08e92151f4a9d7b8a6bd41a856, type: 2}
   animTrigger: VerticalSword
 --- !u!1 &5691132268850506183
 GameObject:
@@ -72,14 +72,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5691132268850506183}
-  m_LocalRotation: {x: 0.61237246, y: 0.61237246, z: 0.35355335, w: 0.35355335}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1760190092775247050}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 90}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &5731581592378127856
 ParticleSystem:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class UseCardSkill : MonoBehaviour
     public string animTrigger;
     protected virtual void Start()
     {
+        if(BattleManager.Instance.hands.Count!=1)
         thiscard = BattleManager.Instance.hands[1];   
     }
     protected virtual void Update()

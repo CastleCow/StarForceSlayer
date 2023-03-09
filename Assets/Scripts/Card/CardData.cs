@@ -24,21 +24,7 @@ public class CardData : ScriptableObject//MonoBehaviour
     public int                           Cost;                       //카드 사용시 코스트
     public Sprite                        Image;
     public UseCardSkill                  thisSkill;
-    public CardData()
-    {
-
-    }
-    public CardData(int cardNum, string cardName, CardAttackTarget attackMethod, int damage, int price, int cost, Sprite image)
-    {
-        CardNum = cardNum;
-        CardName = cardName;
-        this.attackMethod = attackMethod;
-        Damage = damage;
-       
-        Price = price;
-        Cost = cost;
-        Image = image;
-    }
+    
 
 
 }

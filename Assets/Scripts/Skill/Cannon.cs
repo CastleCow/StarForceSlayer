@@ -13,6 +13,7 @@ public class Cannon : UseCardSkill
         {
             IDamagable target = hit.transform.GetComponent<IDamagable>();
             Debug.Log(target);
+            Debug.Log(thiscard);
             target?.TakeDamage(thiscard.Damage);
         }
 

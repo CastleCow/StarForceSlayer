@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 697259772864734913}
   - component: {fileID: 2065342038408480072}
   - component: {fileID: 5447560715905977223}
-  - component: {fileID: 217937412614385473}
+  - component: {fileID: 8032712999785026244}
   m_Layer: 7
   m_Name: MonsterWolf+
   m_TagString: Untagged
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.9702972, z: 1}
   m_Center: {x: -0, y: 0.5080418, z: -0}
---- !u!114 &217937412614385473
+--- !u!114 &8032712999785026244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,13 +106,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3179731248246652196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b510a18d3797f204f913c3821b31e025, type: 3}
+  m_Script: {fileID: 11500000, guid: f50161aa072a7df42b2d9ef5a9ff204f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mondata: {fileID: 11400000, guid: 16b26955f2bb53d49ab58db95fd72eb4, type: 2}
   rigid: {fileID: 2065342038408480072}
   anim: {fileID: 2154373600885939504}
+  moveDelay: 1
   HP: {fileID: 2682431316045210131}
-  moveDelay: 2
   Plane: {fileID: 7732823001776031963}
 --- !u!1 &3456921449676442868
 GameObject:
@@ -367,7 +368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6490551988240409165
 Transform:
   m_ObjectHideFlags: 0

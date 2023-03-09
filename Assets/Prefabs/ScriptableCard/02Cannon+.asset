@@ -21,4 +21,4 @@ MonoBehaviour:
   Price: 30
   Cost: 2
   Image: {fileID: 21300000, guid: d939b8b997e7dd44895d3d23bcb62584, type: 3}
-  thisSkill: {fileID: 7731217659689775723, guid: b4c49cb3d94721040a9373d5f950b47a, type: 3}
+  thisSkill: {fileID: 7731217659689775723, guid: 9b1e0f8cb997f534081667fad5828e2f, type: 3}

@@ -22,7 +22,7 @@ public class Summoner : MonoBehaviour
         BattleManager.Instance.MonsCount = sp.monCount;
         for (int i = 0; i < sp.monCount; i++)
         {
-            gameObjects.Add(Instantiate(sp.mons[i].prefab, transform.position + sp.StartPosition[i], transform.rotation));
+            gameObjects.Add(Instantiate(sp.mons[i].prefab, transform.position + sp.StartPosition[i], sp.mons[i].prefab.transform.rotation));
           
         }
         BattleManager.Instance.monsters = gameObjects;

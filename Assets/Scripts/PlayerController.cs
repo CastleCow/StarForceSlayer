@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour,IDamagable
     [SerializeField, Range(0f, 360f)]
     private float attackAngle;
 
-	public UseCardSkill skill=new UseCardSkill();
+	public UseCardSkill skill;
 
 
 

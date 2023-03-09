@@ -19,12 +19,18 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     private void Start()
     {
         curHp = mondata.curHp;
+        StartCoroutine(MoveRoutine());
     }
     protected void Update()
     {
         HP.text =""+ curHp;
     }
    
+    protected virtual IEnumerator MoveRoutine()
+    {
+        Debug.Log("MonRou");
+        yield return moveRoutine;
+    }
     public virtual void Move()
     {
         Debug.Log("MonMove");
