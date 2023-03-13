@@ -42,9 +42,8 @@ public class ScorpionMovement : MonsterMoveBase,IDamagable
     }
     public override void Attack()
     {
-        if((-1.25<transform.position.x&& transform.position.x<-1.15)|| 
-            (-0.05 < transform.position.x && transform.position.x < 0.05)||
-            (1.15 < transform.position.x && transform.position.x < 1.25))
+        if((-1.15 < transform.position.x&& transform.position.x< -0.05) || 
+            (0.05 < transform.position.x && transform.position.x < 1.15) )//||( < transform.position.x && transform.position.x < 1.25))
         {
             return;
         }
@@ -52,21 +51,21 @@ public class ScorpionMovement : MonsterMoveBase,IDamagable
         if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.back * 7f, out hit, Mathf.Infinity, LayerMask.GetMask("Player")))
         {
             targetLock= true;
-            if (-1.25 < transform.position.x && transform.position.x < -1.15)
+            if (-1.25 <= transform.position.x && transform.position.x <= -1.15)
             {
                 ReturnPos= new Vector3(-1.2f,transform.position.y, transform.position.z);
             }
-            else if (-0.05 < transform.position.x && transform.position.x < 0.05)
+            else if (-0.06 <= transform.position.x && transform.position.x <= 0.06)
             {
                 ReturnPos= new Vector3(0,transform.position.y, transform.position.z);
 
             }
-            else if(1.15 < transform.position.x && transform.position.x < 1.25)
+            else if(1.14 <= transform.position.x && transform.position.x <= 1.26)
             {
                 ReturnPos= new Vector3(1.2f,transform.position.y, transform.position.z);
-
             }
-            //MoveVec = 0;
+            Debug.Log(ReturnPos);
+            
 
         }
 

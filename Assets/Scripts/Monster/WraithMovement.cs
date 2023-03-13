@@ -5,18 +5,20 @@ using UnityEngine;
 
 public class WraithMovement : MonsterMoveBase
 {
-    int atkCount=0;
+    public enum WraithState { Normal, Wound };
+    int atkCount = 0;
     [SerializeField]
     private GameObject[] Plane;
-    private void Start()
-    {
-        moveRoutine=StartCoroutine(MoveRoutine());
+    WraithState state = WraithState.Normal;
 
-    }
-    private IEnumerator MoveRoutine()
+    protected override IEnumerator MoveRoutine()
     {
         while (true)
         {
+            if (curHp < mondata.maxHp * 0.3)
+            {
+                state = WraithState.Wound;
+            }
             yield return new WaitForSeconds(moveDelay);
             if (atkCount < 2)
                 Move();
@@ -26,8 +28,9 @@ public class WraithMovement : MonsterMoveBase
     }
     public override void Move()
     {
-        for (int i = 0; i < Plane.Length; i++) {
-            Plane[i].SetActive(false); 
+        for (int i = 0; i < Plane.Length; i++)
+        {
+            Plane[i].SetActive(false);
         }
         //x=-1.2 0 1.2
         float x = (Random.Range(0, 3) - 1) * 1.2f;
@@ -42,19 +45,42 @@ public class WraithMovement : MonsterMoveBase
     private void UsePattern()
     {
         int i = Random.Range(0, 3);
-
-        switch (i)
+        switch (state)
         {
-            case 0:
-                Pattern1();
-                break;
-            case 1:
-                Pattern2();
-                break;
-            case 2: 
-                Pattern3(); 
-                break;
+            case WraithState.Normal:
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            Pattern1();
+                            break;
+                        case 1:
+                            Pattern2();
+                            break;
+                        default:
+                            Pattern2();
+                            break;
+                    }
+                    break;
+                }
+            case WraithState.Wound:
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            Pattern1();
+                            break;
+                        case 1:
+                            Pattern2();
+                            break;
+                        case 2:
+                            Pattern3();
+                            break;
+                    }
+                    break;
+                }
         }
+
     }
     private void Pattern1()
     {
@@ -74,9 +100,9 @@ public class WraithMovement : MonsterMoveBase
         //윙 슬래시 공격
         anim.SetTrigger("SlashAtk");
         Debug.Log("슬래시");
-        
+
         float attackRange = 2;
-        float attackAngle =90;
+        float attackAngle = 90;
         // 1. 범위내에 있는가
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
         for (int i = 0; i < colliders.Length; i++)
@@ -102,11 +128,11 @@ public class WraithMovement : MonsterMoveBase
         anim.SetTrigger("SpinAtk");
         Debug.Log("스핀");
         float attackRange = 2;
-       
+
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
         for (int i = 0; i < colliders.Length; i++)
         {
-            
+
             IDamagable target = colliders[i].GetComponent<IDamagable>();
             Debug.Log(target);
             target?.TakeDamage(mondata.baseDamage);

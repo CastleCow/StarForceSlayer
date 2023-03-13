@@ -13,6 +13,10 @@ public class Sword : UseCardSkill
         animTrigger = "Sword";
         this.attackRange = thiscard.AttackRange*2;
         this.attackAngle = thiscard.AttackAngle*30;
+        m_ParticleName = thiscard.AttackAngle < 2 ? "VerticalSlash" : "HorizontalSlash";
+        
+            
+        
         // 1. 범위내에 있는가
         Collider[] colliders = Physics.OverlapSphere(Player.transform.position, attackRange,LayerMask.GetMask("Monster"));
         for (int i = 0; i < colliders.Length; i++)

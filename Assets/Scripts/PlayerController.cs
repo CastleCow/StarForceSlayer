@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 
 	public UseCardSkill skill;
 
-
+	private PoolManager m_poolManager;
 
     [SerializeField]
 	private TextMeshProUGUI HP;
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 		skill = GetComponent<UseCardSkill>();
 		controller = GetComponent<CharacterController>();
 		rigid= controller.GetComponent<Rigidbody>();
+		m_poolManager=FindObjectOfType<PoolManager>();
 	}
 
 	private void Start()
@@ -113,8 +115,10 @@ public class PlayerController : MonoBehaviour,IDamagable
         RaycastHit hit;
 		if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.forward * 7f, out hit, Mathf.Infinity))
 		{
+			m_poolManager.NameGet("Hit_NormalAttack", hit.transform.position);
 			IDamagable target = hit.transform.GetComponent<IDamagable>();
 			target?.TakeDamage(BattleManager.Instance.player.BaseDamage);
+			
 		}
     }
 
@@ -129,9 +133,10 @@ public class PlayerController : MonoBehaviour,IDamagable
 		Debug.Log(gameObject);
 		//카드 발동
 		skill = BattleManager.Instance.hands[1].thisSkill;
-        skill.CardAttack(this.gameObject);
-		//anim.SetTrigger(skill.animTrigger);
-		Debug.Log("스킬사용");
+		skill.CardAttack(this.gameObject);
+        m_poolManager.NameGet(skill.m_ParticleName, this.transform.position);
+        //anim.SetTrigger(skill.animTrigger);
+        Debug.Log("스킬사용");
 		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);
 		BattleManager.Instance.hands.RemoveAt(1);
 

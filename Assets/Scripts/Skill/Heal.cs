@@ -8,6 +8,7 @@ public class Heal : UseCardSkill
     {
         Debug.Log("Heal");
         animTrigger = "Heal";
+        m_ParticleName = "Heal";
         BattleManager.Instance.player.CurHp += thiscard.Damage;
     }
 }

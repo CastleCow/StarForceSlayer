@@ -6,6 +6,7 @@ public class UseCardSkill : MonoBehaviour
 {
     public CardData thiscard;
     public string animTrigger;
+    public string m_ParticleName;
     protected virtual void Start()
     {
         if(BattleManager.Instance.hands.Count!=1)
