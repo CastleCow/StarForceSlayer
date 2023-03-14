@@ -81,17 +81,7 @@ public class ScorpionMovement : MonsterMoveBase,IDamagable
             targetLock = false;
         }
     }
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    Debug.Log("스콜피 트리거 온");
-    //    IDamagable target = collision.transform.GetComponent<IDamagable>();
-    //    target?.TakeDamage(mondata.baseDamage);
-    //    if (target != null)
-    //    {
-    //        transform.position = ReturnPos;
-    //        targetLock = false;
-    //    }
-    //}
+    
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("스콜피 트리거 온");
