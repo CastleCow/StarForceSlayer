@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class DeckEdit : MonoBehaviour
 {
-
+    public List<CardData> PrevCards= new List<CardData>();
     public List<CardData> cards;
 
-    private int maxDeckCount=0;
-    
+    private int maxDeckCount = 0;
+
     [SerializeField]
     private ShowCard prefabs;
 
 
     private void Start()
     {
-        cards= PlayerManager.Instance.PlayerDeck.GetCards();
+        cards = PlayerManager.Instance.PlayerDeck.GetCards();
+        for (int i= 0; i <cards.Count;i++) { PrevCards.Add(cards[i]); }
     }
     private void OnEnable()
     {
-       // ShowDeck();
+        // ShowDeck();
     }
     private void Update()
     {
@@ -29,7 +30,7 @@ public class DeckEdit : MonoBehaviour
     {
         if (PlayerManager.Instance.PlayerDeck == null)
             return;
-      
+
         if (maxDeckCount < cards.Count)
         {
             prefabs.thisId = cards[maxDeckCount].CardNum;
@@ -37,13 +38,16 @@ public class DeckEdit : MonoBehaviour
             maxDeckCount++;
         }
     }
-    public void AddCard()
+    
+    public void SaveDeck()
     {
-        
+        PrevCards.Clear();
+        for (int i = 0; i < cards.Count; i++) { PrevCards.Add(cards[i]); }
     }
-    public void RemoveCard()
+    public void ExitDeckEdit() 
     {
-
+        PlayerManager.Instance.PlayerDeck.cards.Clear(); 
+        for (int i = 0; i < PrevCards.Count; i++) { cards.Add(PrevCards[i]); }
     }
 
 }

@@ -25,6 +25,9 @@ public class ShowCard : MonoBehaviour//,IDraggable
     [SerializeField]
     private Sprite cardImage;
     public Image image;
+
+    [SerializeField]
+    private Button m_but;
     private void Awake()
     {
       
@@ -49,5 +52,28 @@ public class ShowCard : MonoBehaviour//,IDraggable
         image.sprite = cardImage;
 
     }
-        
+    
+    public void ToInventory()
+    {
+        PlayerManager.Instance.PlayerInventory.Amount[cardId]++;
+        PlayerManager.Instance.PlayerDeck.Remove(cards[0]);
+    }
+    public void BuyCard()
+    {
+        if(PlayerManager.Instance.PlayerInventory.Money< cards[0].Price) 
+        {
+            Debug.Log("Not enough Money");
+            m_but.enabled = true;
+            return;
+        }
+        PlayerManager.Instance.PlayerInventory.Buy(DataBaseManager.Instance.cardDatas[cardId]);
+
+    }
+    
+    
 }
+/*
+ public enum ShowSpace{Shop,BattleSelect,Deck,Result,Size}
+로 나눠서 버튼 따로 만들기?
+
+ */

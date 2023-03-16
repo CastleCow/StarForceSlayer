@@ -7,21 +7,26 @@ public class CardIndex : MonoBehaviour
 {
     
     
-    private int indexcount = 0;
+    private int indexcount = new int();
     [SerializeField]
     private IndexData m_index;
     // Start is called before the first frame update
     void Start()
     {
        indexcount= 0;
+        for(int i=1;i< DataBaseManager.Instance.cardDatas.Count;i++)
+        {
+            m_index.thisid = i ;
+            Instantiate(m_index, transform);
+        }
     }
     private void Update()
     {
-        ShowIndexCard();
+       // ShowIndexCard();
     }
     private void ShowIndexCard()
     {
-        if (indexcount < DataBaseManager.Instance.cardDatas.Count-1)
+        if (indexcount < DataBaseManager.Instance.cardDatas.Count)
         {
             Debug.Log("인덱스카운트:"+indexcount);
             Instantiate(m_index, transform);

@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     {
         inventory = DataBaseManager.Instance.cardDatas;
         Amount=new int[inventory.Count];
+        Money = 100;
     }
     public void AcquireCard(CardData card)
     {

@@ -16,8 +16,12 @@ public class CanvasConnect : MonoBehaviour
     public Image[] image;
     public TextMeshProUGUI cardName;
 
+    public float BattleTimer=0;
+    public int minute;
+
     private void Start()
     {
+        BattleTimer = 0;
         BattleManager.Instance.CardSelectCanvas= CardSelectCanvas;
         BattleManager.Instance.ResultCanvas= ResultCanvas;
         BattleManager.Instance.player =player;
@@ -25,6 +29,13 @@ public class CanvasConnect : MonoBehaviour
     }
     private void Update()
     {
+        BattleTimer += Time.deltaTime;
+        if (BattleTimer > 60)
+        {
+            minute++;
+            BattleTimer = 0;
+        }
+
         text.text = "Cost" + BattleManager.Instance.player.CardUsingCost + "/6";
         /*if (BattleManager.Instance.hands != null) {
             for (int i = 0; i < BattleManager.Instance.hands.Count; i++)
