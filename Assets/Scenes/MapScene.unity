@@ -2329,7 +2329,7 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_StartCorner: 0
-  m_StartAxis: 0
+  m_StartAxis: 1
   m_CellSize: {x: 100, y: 100}
   m_Spacing: {x: 100, y: 50}
   m_Constraint: 0
@@ -2354,6 +2354,7 @@ MonoBehaviour:
   - {fileID: 7875001215835239303, guid: 11ef02755a55c4340bbe544026fd1c2b, type: 3}
   - {fileID: 4709343426190721592, guid: 811156dd0c9794347bcf1e96d78edd00, type: 3}
   - {fileID: 1736410554306408618, guid: 5a0486d370a8dfa43b6202e5cb99c04f, type: 3}
+  m_Nodes: []
 --- !u!1001 &815911489
 PrefabInstance:
   m_ObjectHideFlags: 0

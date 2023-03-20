@@ -10,18 +10,17 @@ public class MapMaker : MonoBehaviour
 
     private int maxNodeSize = 30;
     private int curNode = 0;
+    public int clickedNodeNum;
+    public bool click;
+    public List<MapNodeData> m_Nodes = new List<MapNodeData>();
 
-    private List<MapNodeData> m_Nodes = new List<MapNodeData>();
-
-    private void Awake()
-    {
-        //m_Nodes = GetComponents<List<MapNodeData>>;
-    }
 
     // Start is called before the first frame update
     void Start()
     {
         curNode = 0;
+        clickedNodeNum = 0;
+        click= false;
         maxNodeSize = 30;
         for (int i = 0; i < maxNodeSize; i++)
         {
@@ -34,7 +33,10 @@ public class MapMaker : MonoBehaviour
     void Update()
     {
         SetAllNode();
-        //ShowAllNode();
+        if (click)
+        {
+            DisableOtherNode();
+        }//ShowAllNode();
     }
 
     void SetAllNode()
@@ -42,37 +44,50 @@ public class MapMaker : MonoBehaviour
 
         if (curNode < maxNodeSize)
         {
-            int start = curNode % 10;
-
-
             int ran = Random.Range(1, 6);
-            m_Nodes[curNode] = mapNodeList[ran];
-            if (curNode == 10) ran = 0;//m_Nodes[curNode] = mapNodeList[1];
-            else if (curNode == 19) ran = 6;//m_Nodes[curNode] = mapNodeList[6];
-            else if (start == 0 || start == 9) ran = 1;// m_Nodes[curNode] = mapNodeList[1]; }
+            if (curNode == 1) ran = 0;//m_Nodes[curNode] = mapNodeList[1];
+            else if (curNode == 28) ran = 6;//m_Nodes[curNode] = mapNodeList[6];
+            else if (curNode == 0 || curNode == 2 ||
+                curNode == 29 || curNode == 27) ran = 1;// m_Nodes[curNode] = mapNodeList[1]; }
 
-            ShowAllNode(ran);
+            m_Nodes[curNode] = Instantiate(mapNodeList[ran], transform);
+            m_Nodes[curNode].NodeNum = curNode;
+            //m_Nodes[curNode].m_button.onClick.AddListener(DisableOtherNode);
+            // ShowAllNode(ran);
             curNode++;
 
         }
     }
-    private void ShowAllNode(int ran)
-    {
-        
-        Instantiate(mapNodeList[ran], transform);
-    }
-    private void ShowAllNode()
-    {
-        for(int i=0;i<m_Nodes.Count;i++)
-        {
-            Instantiate(mapNodeList[(int)(m_Nodes[i].nodeType)], transform);
-        }
-    }
-    
 
+
+    private void DisableOtherNode()
+    {
+        if (clickedNodeNum == 0) return;
+        for (int i = 0; i < clickedNodeNum; i++)
+        {
+            Debug.Log(m_Nodes[i]);
+            m_Nodes[i].NodeUsed();
+        }
+        if (clickedNodeNum % 3 == 0)
+        {
+            m_Nodes[clickedNodeNum + 1].NodeUsed();
+            m_Nodes[clickedNodeNum + 2].NodeUsed();
+        }
+        else if(clickedNodeNum % 3 == 1)
+        {
+            m_Nodes[clickedNodeNum + 1].NodeUsed();
+
+        }
+        else
+        {
+
+        }
+        click = false;
+        //clickedNodeNum= 
+    }
     private void SetNextNode()
     {
-        // m_Nodes[0].nextNode[0]=;
+        //m_Nodes[0].nextNode[0]=;
     }
 
 }

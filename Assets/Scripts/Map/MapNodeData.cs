@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MapNodeData :MonoBehaviour
 {
@@ -16,15 +17,18 @@ public class MapNodeData :MonoBehaviour
         Event,
         BossBattle,
 
-
         Size
     }
     public NodeType nodeType;
 
     public bool usedNode;
-    public int? MonsCount;
+    public MapMaker map;
+    public int NodeNum;
+    public Button m_button;
+    
     public MapNodeData prevNode;
     public MapNodeData[] nextNode;
+    public Image filter;
 
     public MapNodeData() { }
     public MapNodeData(NodeType nodetype,bool usedNode, MapNodeData prevnode, MapNodeData[] nextnode)
@@ -33,8 +37,11 @@ public class MapNodeData :MonoBehaviour
         this.usedNode=usedNode;
         this.prevNode=prevnode;
         nextNode=nextnode;
-        if(nodeType==NodeType.NormalBattle|| nodeType == NodeType.EliteBattle ) { MonsCount = Random.Range(1, 3); }
-
+       
+    }
+    private void Start()
+    {
+        map = FindObjectOfType<MapMaker>();
     }
     public void NodeClick()
     {
@@ -67,7 +74,19 @@ public class MapNodeData :MonoBehaviour
                 break;
         }
         usedNode = true;
-     
-    }                                            
+    }
+    public void NodeUsed()
+    {
+        if (filter == null || m_button == null)
+            return;
+        filter.enabled=true;
+        m_button.enabled = false;
+        
+    }
+    public void NumToMap()
+    {
+        map.clickedNodeNum = NodeNum;
+        map.click = true;
+    }
 
 }
