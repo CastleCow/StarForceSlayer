@@ -87,6 +87,7 @@ public class ScorpionMovement : MonsterMoveBase,IDamagable
         Debug.Log("스콜피 트리거 온");
         IDamagable target = other.transform.GetComponent<IDamagable>();
         target?.TakeDamage(mondata.baseDamage);
+        //m_poolManager.NameGet("Hit_NormalAttack", other.transform.position);
         if (target != null)
         {
             transform.position = ReturnPos;

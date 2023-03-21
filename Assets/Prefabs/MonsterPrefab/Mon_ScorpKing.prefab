@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 2038800081335331152}
   - component: {fileID: -4915981599669176883}
   - component: {fileID: -398063910227164065}
+  - component: {fileID: 4027858756414703750}
   m_Layer: 0
   m_Name: Mon_ScorpKing
   m_TagString: Untagged
@@ -197,6 +198,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.127601, y: 1.6123953, z: 1}
   m_Center: {x: -0.1752063, y: 1.050606, z: -0}
+--- !u!114 &4027858756414703750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8115619125795116289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1872c22bd5ebe454184ae7ff33aed85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mondata: {fileID: 11400000, guid: db55bc5ac92f2794fab152937167bbe6, type: 2}
+  rigid: {fileID: -4915981599669176883}
+  anim: {fileID: 5332724873594112210}
+  moveDelay: 0
+  HP: {fileID: 7038279490443521071}
 --- !u!1 &8363237495420953283
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,5 +410,10 @@ PrefabInstance:
 --- !u!4 &2081096030241837736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2941465888485461433, guid: d1f4f65627855504095a1b3a244070e3, type: 3}
+  m_PrefabInstance: {fileID: 3761533131468873489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5332724873594112210 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9093334379860006851, guid: d1f4f65627855504095a1b3a244070e3, type: 3}
   m_PrefabInstance: {fileID: 3761533131468873489}
   m_PrefabAsset: {fileID: 0}

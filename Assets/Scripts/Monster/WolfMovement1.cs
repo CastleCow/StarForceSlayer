@@ -57,6 +57,7 @@ public class WolfMovement1 : MonsterMoveBase,IDamagable
         if (Physics.Raycast(transform.position + new Vector3(0, 0.3f, 0), Vector3.back * 7f, out hit, Mathf.Infinity, LayerMask.GetMask("Player")))
         {
             IDamagable target = hit.transform.GetComponent<IDamagable>();
+            m_poolManager.NameGet("Hit_NormalAttack", hit.transform.position);
             target?.TakeDamage(mondata.baseDamage);
         }
 

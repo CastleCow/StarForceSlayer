@@ -16,10 +16,13 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
     [SerializeField]
     protected TextMeshProUGUI HP;
     protected int curHp;
+
+    protected PoolManager m_poolManager;
     private void Start()
     {
         curHp = mondata.curHp;
         StartCoroutine(MoveRoutine());
+        m_poolManager= FindObjectOfType<PoolManager>();
     }
     protected void Update()
     {
@@ -48,7 +51,7 @@ public class MonsterMoveBase : MonoBehaviour,IDamagable
             IsDead();
         }
     }
-    protected void IsDead()
+    protected virtual void IsDead()
     {
         BattleManager.Instance.MonsCount--;
         //ªÁ∏¡ ¿Ã∆Â∆Æ
