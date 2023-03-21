@@ -10,7 +10,7 @@ public class Sword : UseCardSkill
     public override void CardAttack(GameObject Player)
     {
         Debug.Log("¼Òµå");
-        animTrigger = "Sword";
+        animTrigger = "Range";
         this.attackRange = thiscard.AttackRange*2;
         this.attackAngle = thiscard.AttackAngle*30;
         m_ParticleName = thiscard.AttackAngle < 2 ? "VerticalSlash" : "HorizontalSlash";

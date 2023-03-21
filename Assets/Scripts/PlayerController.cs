@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 		Skill();
 
 		HP.text = "" + BattleManager.Instance.player.CurHp;
+        anim.SetBool("Skill", false);
     }
 
 	private void Move()
@@ -129,9 +130,9 @@ public class PlayerController : MonoBehaviour,IDamagable
         if (!Input.GetButtonDown("Fire2")|| BattleManager.Instance.CardSelectCanvas.activeSelf == true|| BattleManager.Instance.hands.Count==1)
             return;
 
-		
-        
 
+
+		anim.SetBool("Skill",true);
 		Debug.Log(gameObject);
 		//카드 발동
 		skill = BattleManager.Instance.hands[1].thisSkill;
@@ -139,10 +140,13 @@ public class PlayerController : MonoBehaviour,IDamagable
         m_poolManager.NameGet(skill.m_ParticleName, SkillPos.transform.position);
         //anim.SetTrigger(skill.animTrigger);
         Debug.Log("스킬사용");
+		anim.SetTrigger(skill.animTrigger);
 		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);
 		BattleManager.Instance.hands.RemoveAt(1);
 
-	}
+       
+
+    }
 	public void TakeDamage(int damage)
     {
 		anim.SetTrigger("Hit");
@@ -150,6 +154,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 		if(BattleManager.Instance.player.CurHp<=0)
 		{
 			GameManager.Instance.UnloadScene("BattleScene");
+			Cursor.lockState = CursorLockMode.None;
 		}
 	}
     public void OnSkillkHit()
