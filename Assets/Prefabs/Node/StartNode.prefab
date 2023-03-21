@@ -92,10 +92,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeType: 0
   usedNode: 0
+  map: {fileID: 0}
+  NodeNum: 0
   m_button: {fileID: 0}
   prevNode: {fileID: 0}
   nextNode: []
-  filter: {fileID: 2604965790758749322}
+  filter: {fileID: 8029145229012152279}
 --- !u!1 &8029145229012152279
 GameObject:
   m_ObjectHideFlags: 0

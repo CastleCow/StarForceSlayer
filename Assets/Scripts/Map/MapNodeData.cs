@@ -28,7 +28,7 @@ public class MapNodeData :MonoBehaviour
     
     public MapNodeData prevNode;
     public MapNodeData[] nextNode;
-    public Image filter;
+    public GameObject filter;
 
     public MapNodeData() { }
     public MapNodeData(NodeType nodetype,bool usedNode, MapNodeData prevnode, MapNodeData[] nextnode)
@@ -79,7 +79,7 @@ public class MapNodeData :MonoBehaviour
     {
         if (filter == null || m_button == null)
             return;
-        filter.enabled=true;
+        filter.SetActive(true);
         m_button.enabled = false;
         
     }
