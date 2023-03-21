@@ -19,8 +19,8 @@ public class PlayerData : MonoBehaviour
     };
 
     public PlayerClass Class;
-   
 
+    public int MaxUsingCost;
     public int CardUsingCost;
 
 

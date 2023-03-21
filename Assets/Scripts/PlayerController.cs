@@ -42,6 +42,8 @@ public class PlayerController : MonoBehaviour,IDamagable
     [SerializeField]
 	private TextMeshProUGUI HP;
 
+	[SerializeField]
+	private GameObject SkillPos;
 	
 	private void Awake()
 	{
@@ -134,7 +136,7 @@ public class PlayerController : MonoBehaviour,IDamagable
 		//카드 발동
 		skill = BattleManager.Instance.hands[1].thisSkill;
 		skill.CardAttack(this.gameObject);
-        m_poolManager.NameGet(skill.m_ParticleName, this.transform.position);
+        m_poolManager.NameGet(skill.m_ParticleName, SkillPos.transform.position);
         //anim.SetTrigger(skill.animTrigger);
         Debug.Log("스킬사용");
 		BattleManager.Instance.grave.Add(BattleManager.Instance.hands[1]);

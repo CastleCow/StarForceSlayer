@@ -203,6 +203,7 @@ MonoBehaviour:
   attackAngle: 0
   skill: {fileID: 3431891298856868156}
   HP: {fileID: 0}
+  SkillPos: {fileID: 6044611107776523328}
 --- !u!143 &4766380181033117756
 CharacterController:
   m_ObjectHideFlags: 0
@@ -268,6 +269,7 @@ MonoBehaviour:
   BaseDamage: 1
   PlayerName: Archer
   Class: 3
+  MaxUsingCost: 6
   CardUsingCost: 6
 --- !u!114 &3431891298856868156
 MonoBehaviour:
@@ -283,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thiscard: {fileID: 0}
   animTrigger: 
+  m_ParticleName: 
 --- !u!1001 &2256621837596399539
 PrefabInstance:
   m_ObjectHideFlags: 0

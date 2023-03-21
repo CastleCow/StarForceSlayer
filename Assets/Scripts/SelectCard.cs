@@ -22,6 +22,8 @@ public class SelectCard : MonoBehaviour
     {
         
         Show();
+        int i = BattleManager.Instance.player.MaxUsingCost;
+        BattleManager.Instance.player.CardUsingCost = i;
     }
     private void Show()
     {
@@ -53,4 +55,5 @@ public class SelectCard : MonoBehaviour
         BattleManager.Instance.hands.Remove(cardSelect);
 
     }
+
 }

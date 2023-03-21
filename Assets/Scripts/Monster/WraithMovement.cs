@@ -13,6 +13,8 @@ public class WraithMovement : MonsterMoveBase
     private GameObject[] Plane;
     WraithState state = WraithState.Normal;
 
+    private int m_damage;
+
     protected override IEnumerator MoveRoutine()
     {
         while (true)
@@ -140,6 +142,7 @@ public class WraithMovement : MonsterMoveBase
         //À® ½ºÇÉ °ø°Ý
         anim.SetTrigger("SpinAtk");
         Debug.Log("½ºÇÉ");
+        rigid.MovePosition(new Vector3(transform.position.x, 0, -1.25f));
         float attackRange = 2;
         Plane[2].SetActive(true);
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
@@ -148,7 +151,7 @@ public class WraithMovement : MonsterMoveBase
             IDamagable target = colliders[i].GetComponent<IDamagable>();
             m_poolManager.NameGet("Hit_NormalAttack", colliders[i].transform.position);
             Debug.Log(target);
-            target?.TakeDamage(mondata.baseDamage);
+            target?.TakeDamage(mondata.baseDamage*2);
 
         }
 

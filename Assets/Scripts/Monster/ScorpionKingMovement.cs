@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScorpionKingMovement : MonsterMoveBase, IDamagable
 {
-    private Vector3 ReturnPos;
+    private Vector3 ReturnPos=new Vector3(0,0,2.5f);
     private int MoveVec;
     private bool targetLock;
     protected override IEnumerator MoveRoutine()
