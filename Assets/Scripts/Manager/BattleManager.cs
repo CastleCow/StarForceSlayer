@@ -36,6 +36,7 @@ public class BattleManager : SingleTon<BattleManager>
         {
             ShowCardSelectCanvas();
             BattleTimer = 0;
+            if(hands.Count>1)
             for (int i = 1; i < hands.Count; i++) {
                 grave.Add(hands[i]);
             }

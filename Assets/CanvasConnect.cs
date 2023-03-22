@@ -134,6 +134,7 @@ public class CanvasConnect : MonoBehaviour
     public void Run()
     {
         PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.grave);
+        BattleManager.Instance.hands.RemoveAt(0);
         PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.hands);
         BattleManager.Instance.grave.Clear();
         BattleManager.Instance.hands.Clear();
