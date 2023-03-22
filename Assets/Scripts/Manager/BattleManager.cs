@@ -32,7 +32,7 @@ public class BattleManager : SingleTon<BattleManager>
     private void Update()
     {
         BattleTimer += Time.deltaTime;
-        if (BattleTimer > 30 &&Input.GetButtonDown("TimeUp"))
+        if (BattleTimer > 20 &&Input.GetButtonDown("TimeUp"))
         {
             ShowCardSelectCanvas();
             BattleTimer = 0;

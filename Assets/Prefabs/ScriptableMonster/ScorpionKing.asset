@@ -16,6 +16,6 @@ MonoBehaviour:
   monName: ScorpionKing
   maxHp: 200
   curHp: 200
-  baseDamage: 30
+  baseDamage: 20
   type: 2
   prefab: {fileID: 8115619125795116289, guid: ea886c08196bdc74884b03d39948a9fa, type: 3}

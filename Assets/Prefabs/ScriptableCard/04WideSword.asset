@@ -20,5 +20,5 @@ MonoBehaviour:
   AttackRange: 1
   Price: 30
   Cost: 2
-  Image: {fileID: 21300000, guid: 284bdbfe60084904f9cdab556affbcb7, type: 3}
+  Image: {fileID: 21300000, guid: 006f09b00039b439893f8261106e56df, type: 3}
   thisSkill: {fileID: 7263418826251786419, guid: cf66036da733a834faa4dc3b53ed52c5, type: 3}

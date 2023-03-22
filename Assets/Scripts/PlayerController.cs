@@ -4,6 +4,7 @@ using TMPro;
 using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 enum PlayerState { Normal, Battle }
 
@@ -153,10 +154,19 @@ public class PlayerController : MonoBehaviour,IDamagable
 		BattleManager.Instance.player.CurHp -= damage;
 		if(BattleManager.Instance.player.CurHp<=0)
 		{
-			GameManager.Instance.UnloadScene("BattleScene");
-			Cursor.lockState = CursorLockMode.None;
+			IsDead();
 		}
 	}
+	public void IsDead()
+	{
+        Cursor.lockState = CursorLockMode.None;
+		Destroy(BattleManager.Instance);
+		Destroy(GameManager.Instance);
+		Destroy(DataBaseManager.Instance);
+		Destroy(PlayerManager.Instance);
+		
+        SceneManager.LoadScene("GameOver");
+    }
     public void OnSkillkHit()
     {
         Debug.Log("공격 타이밍");

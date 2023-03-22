@@ -1576,6 +1576,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6646732980552378827, guid: 9e41d10182626e4458c3d5bd56f6fa39, type: 3}
   m_PrefabInstance: {fileID: 331163224}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &331163226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2332366301528238228, guid: 9e41d10182626e4458c3d5bd56f6fa39, type: 3}
+  m_PrefabInstance: {fileID: 331163224}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &351301694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,6 +4184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 946358067}
   - component: {fileID: 946358068}
+  - component: {fileID: 946358069}
   m_Layer: 5
   m_Name: TurnGauge
   m_TagString: Untagged
@@ -4243,7 +4255,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 331163226}
   m_FillRect: {fileID: 0}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
@@ -4254,6 +4266,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &946358069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946358066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a2d211ed27dd84fad6ec11981c0560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gauge: {fileID: 1155013752}
 --- !u!1 &949726909
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,6 +5145,7 @@ GameObject:
   - component: {fileID: 1155013751}
   - component: {fileID: 1155013753}
   - component: {fileID: 1155013752}
+  - component: {fileID: 1155013754}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -5167,11 +5193,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bda4fceaa03d1424ea70da7e497a2231, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -5185,6 +5211,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155013750}
   m_CullTransparentMesh: 1
+--- !u!114 &1155013754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155013750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a2d211ed27dd84fad6ec11981c0560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gauge: {fileID: 1155013752}
 --- !u!1 &1165144652
 GameObject:
   m_ObjectHideFlags: 0

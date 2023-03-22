@@ -16,7 +16,9 @@ MonoBehaviour:
   CardName: Recov10
   attackMethod: 2
   Damage: 10
+  AttackAngle: 0
+  AttackRange: 0
   Price: 15
   Cost: 1
-  Image: {fileID: 21300000, guid: 118035bfb8c91ea40be2b22b03c26ba2, type: 3}
+  Image: {fileID: 21300000, guid: 41f765b960395416192f6fba79ab2dfe, type: 3}
   thisSkill: {fileID: 6033197949200058289, guid: 6553e98664a5bcd43895bbe486c095f1, type: 3}

@@ -115,10 +115,11 @@ public class WraithMovement : MonsterMoveBase
         Debug.Log("슬래시");
         Plane[1].SetActive(true);
         rigid.MovePosition(new Vector3(transform.position.x, 0, -1.25f));
-        float attackRange = 2;
+        float attackRange = 3;
         float attackAngle = 90;
         // 1. 범위내에 있는가
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
+        Debug.Log(colliders[0]);
         for (int i = 0; i < colliders.Length; i++)
         {
             //if (colliders[i].gameObject.name != "Cube")
@@ -146,6 +147,7 @@ public class WraithMovement : MonsterMoveBase
         float attackRange = 2;
         Plane[2].SetActive(true);
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackRange, LayerMask.GetMask("Player"));
+
         for (int i = 0; i < colliders.Length; i++)
         {
             IDamagable target = colliders[i].GetComponent<IDamagable>();
@@ -160,6 +162,24 @@ public class WraithMovement : MonsterMoveBase
     {
         anim.SetBool("IsDead", true);
         base.IsDead();
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Debug.DrawRay(transform.position + new Vector3(0, 0.3f, 0), Vector3.forward * 7f, Color.cyan);
+
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, 3);
+
+        Vector3 rightDir = AngleToDir(transform.eulerAngles.y + 90 * 0.5f);
+        Vector3 leftDir = AngleToDir(transform.eulerAngles.y - 90 * 0.5f);
+        Debug.DrawRay(transform.position, rightDir * 100, Color.blue);
+        Debug.DrawRay(transform.position, leftDir * 100, Color.blue);
+    }
+    private Vector3 AngleToDir(float angle)
+    {
+        float radian = angle * Mathf.Deg2Rad;
+        return new Vector3(Mathf.Sin(radian), 0, Mathf.Cos(radian));
     }
 
 }

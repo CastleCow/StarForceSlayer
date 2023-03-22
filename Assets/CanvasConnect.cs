@@ -62,7 +62,10 @@ public class CanvasConnect : MonoBehaviour
 
     public void Run()
     {
-
+        PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.grave);
+        PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.hands);
+        BattleManager.Instance.grave.Clear();
+        BattleManager.Instance.hands.Clear();
         GameManager.Instance.UnloadScene("BattleScene");
         Cursor.lockState= CursorLockMode.Confined;
     }

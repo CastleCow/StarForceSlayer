@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DeckEdit : MonoBehaviour
@@ -12,6 +13,8 @@ public class DeckEdit : MonoBehaviour
     [SerializeField]
     private ShowCard prefabs;
 
+    [SerializeField]
+    private TextMeshProUGUI cardCount;
 
     private void Start()
     {
@@ -25,6 +28,7 @@ public class DeckEdit : MonoBehaviour
     private void Update()
     {
         ShowDeck();
+        cardCount.text=""+ cards.Count.ToString()+" / 30";
     }
     void ShowDeck()
     {

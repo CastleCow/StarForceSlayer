@@ -2354,6 +2354,8 @@ MonoBehaviour:
   - {fileID: 7875001215835239303, guid: 11ef02755a55c4340bbe544026fd1c2b, type: 3}
   - {fileID: 4709343426190721592, guid: 811156dd0c9794347bcf1e96d78edd00, type: 3}
   - {fileID: 1736410554306408618, guid: 5a0486d370a8dfa43b6202e5cb99c04f, type: 3}
+  clickedNodeNum: 0
+  click: 0
   m_Nodes: []
 --- !u!1001 &815911489
 PrefabInstance:
@@ -3600,6 +3602,7 @@ MonoBehaviour:
   BaseDamage: 1
   PlayerName: Archer
   Class: 3
+  MaxUsingCost: 0
   CardUsingCost: 6
 --- !u!114 &1191178528
 MonoBehaviour:
@@ -5304,6 +5307,7 @@ MonoBehaviour:
   PrevCards: []
   cards: []
   prefabs: {fileID: 6379181901464787049, guid: b9e18757c090d614c9a28c120005afc2, type: 3}
+  cardCount: {fileID: 1776247763}
 --- !u!1 &1680447369
 GameObject:
   m_ObjectHideFlags: 0
@@ -6447,7 +6451,7 @@ RectTransform:
   m_Father: {fileID: 1769131764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.53074515}
+  m_AnchorMin: {x: 0, y: 0.5215441}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
