@@ -32,10 +32,15 @@ public class BattleManager : SingleTon<BattleManager>
     private void Update()
     {
         BattleTimer += Time.deltaTime;
-        if (BattleTimer > 20 &&Input.GetButtonDown("TimeUp"))
+        if (BattleTimer > 20 && Input.GetButtonDown("TimeUp"))
         {
             ShowCardSelectCanvas();
             BattleTimer = 0;
+            for (int i = 1; i < hands.Count; i++) {
+                grave.Add(hands[i]);
+            }
+            hands.Clear();
+            hands.Add(DataBaseManager.Instance.cardDatas[0]);
         }
         if (CardSelectCanvas != null)
         {

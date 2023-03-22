@@ -3617,7 +3617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardDatas:
-  - {fileID: 11400000, guid: 9096a7d671a1a6b48bea99a33ef59ac2, type: 2}
+  - {fileID: 11400000, guid: ccef4bea6c8c46f4b926454434225126, type: 2}
   - {fileID: 11400000, guid: 9096a7d671a1a6b48bea99a33ef59ac2, type: 2}
   - {fileID: 11400000, guid: 7626553fdfdb60742912a48a7b749452, type: 2}
   - {fileID: 11400000, guid: 7fbeba4173b9da84cb8e1e59c9202a18, type: 2}

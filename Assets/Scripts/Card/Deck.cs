@@ -30,10 +30,10 @@ public class Deck : MonoBehaviour
         //    cards.Add(null);
         //    cards[i] = DataBaseManager.Instance.datas[rannum];
         //}
-        int j = 0;
+        int j = 1;
         for (int i = 0; i < MinDeckSize; i++)
         {
-            if (i % 3 == 0)
+            if (i % 4 == 0)
                 j++;
             if (j > 6) j = 6;
             cards.Add(null);

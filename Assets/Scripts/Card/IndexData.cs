@@ -37,6 +37,9 @@ public class IndexData : MonoBehaviour
 
     public void ToDeck()
     {
+        if(PlayerManager.Instance.PlayerInventory.Amount[cardNum] < 1)
+            return;
         PlayerManager.Instance.PlayerDeck.Add(DataBaseManager.Instance.cardDatas[thisid]);
+        PlayerManager.Instance.PlayerInventory.Amount[cardNum]--;
     }
 }
