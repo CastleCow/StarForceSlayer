@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CanvasConnect : MonoBehaviour
@@ -133,6 +134,7 @@ public class CanvasConnect : MonoBehaviour
     }
     public void Run()
     {
+        if (BattleManager.Instance.Sp == DataBaseManager.Instance.summonPatterns[4]) { SceneManager.LoadScene("Clear"); }
         PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.grave);
         BattleManager.Instance.hands.RemoveAt(0);
         PlayerManager.Instance.PlayerDeck.Add(BattleManager.Instance.hands);

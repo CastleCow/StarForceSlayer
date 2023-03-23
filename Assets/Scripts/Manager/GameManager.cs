@@ -11,10 +11,11 @@ public class GameManager : SingleTon<GameManager>
     public GameObject ShopPop;
 
     public GameObject mapscene;
+    public MapMaker m_mapMaker;
 
     private void Update()
     {
-      
+     
     }
 
     public void Resume()
@@ -44,5 +45,8 @@ public class GameManager : SingleTon<GameManager>
         mapscene.SetActive(true);
        
     }
-
+    public void DeactiveNode()
+    {
+        //m_mapMaker.clickedNodeNum
+    }
 }
